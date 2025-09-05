@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freelancer Managment System</title>
+  <style>
+    :root{
+      --nav-bg:#2c3e50;
+      --accent:#1abc9c;
+      --danger:#e74c3c;
+      --danger-dark:#c0392b;
+      --card:#ecf0f1;
+      --muted:#f4f6f8;
+      --text:#333;
+      --shadow:0 2px 6px rgba(0,0,0,.2);
+    }
+    *{box-sizing:border-box}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--nav-bg);
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar h2 {
+      margin: 0;
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+    }
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      position: relative;
+      gap: 10px;
+    }
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 4px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background-color .2s ease;
+    }
+    .navbar nav a:hover,
+    .navbar nav a:focus-visible {
+      text-decoration: none;
+      background-color: rgba(255,255,255,.12);
+      outline: none;
+    }
+
+    /* Profile wrapper ensures dropdown is positioned correctly */
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Profile Circle */
+    #profileCircle {
+      width: 40px;
+      height: 40px;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow .2s ease;
+      border: 0;
+    }
+    #profileCircle:hover,
+    #profileCircle:focus-visible {
+      transform: scale(1.06);
+      box-shadow: 0 0 0 3px rgba(26,188,156,.35);
+      outline: none;
+    }
+
+    /* Dropdown Menu */
+    #profileDropdown {
+      position: absolute;
+      top: 52px;
+      right: 0;
+      background-color: white;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      min-width: 180px;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+      padding: 10px;
+      text-align: left;
+      opacity: 0;
+      transform: translateY(-6px);
+      pointer-events: none;
+      transition: opacity .16s ease, transform .16s ease;
+    }
+    #profileDropdown.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    #profileDropdown .profile-head {
+      display:flex;
+      align-items:center;
+      gap:.6rem;
+      padding: 6px 8px 10px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #eee;
+      font-weight: 600;
+      color: #222;
+    }
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 12px;
+      background-color: var(--danger);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color .15s ease, transform .05s ease;
+    }
+    #profileDropdown .logout-btn:hover,
+    #profileDropdown .logout-btn:focus-visible {
+      background-color: var(--danger-dark);
+      outline: none;
+    }
+    #profileDropdown .logout-btn:active {
+      transform: translateY(1px);
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .intro {
+      background: var(--muted);
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    header.page-head {
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+    @media (max-width: 960px){
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px){
+      .navbar nav { gap: 6px; }
+      .navbar nav a { display:none; }
+      .cards { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      text-align: center;
+      min-width: 150px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .card .label { opacity:.85; margin-bottom: 6px; }
+    .card .value { font-size: 1.6rem; font-weight: 800; }
+
+    /* Footer */
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 10px;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; white-space: nowrap; }
+    .navbar nav a.active { background:var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>
+      <a href="index.html">
+        <img src="images/flezidesk.png" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+      </a>
+      <span class="sr-only">Brand:</span> Flezidesk
+    </h2>
+    <nav>
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="projects.html">Projects</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="invoices.html">Invoices</a>
+      <a id="loginLink" href="signup_signin.html">Login</a>
+
+      <!-- Profile UI -->
+      <div class="profile-wrap" id="profileWrap">
+        <button id="profileCircle" aria-haspopup="menu" aria-expanded="false" aria-controls="profileDropdown"></button>
+        <div id="profileDropdown" role="menu">
+          <div class="profile-head">
+            <div id="profileInitialSmall" style="width:28px;height:28px;border-radius:50%;background:#4CAF50;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700"></div>
+            <span id="profileName">User</span>
+          </div>
+          <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="intro">
+      <h3>About Flezidesk</h3>
+      <p>Flezidesk is a Freelancer ERP Dashboard designed to help freelancers manage clients, projects, tasks, and invoices all in one place.</p>
+    </div>
+
+    <header class="page-head">
+      <h1 id="welcomeMessage">Welcome back!</h1>
+      <p>Here's your summary dashboard.</p>
+    </header>
+
+    <section class="cards">
+      <div class="card"><div class="label">💼 Clients</div><div class="value">12</div></div>
+      <div class="card"><div class="label">📁 Projects</div><div class="value">5 Active</div></div>
+      <div class="card"><div class="label">✅ Tasks</div><div class="value">21</div></div>
+      <div class="card"><div class="label">💰 Invoices</div><div class="value">$2,100</div></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>📧 Contact Us: <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Help</a></p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const loginLink       = document.getElementById("loginLink");
+  const profileCircle   = document.getElementById("profileCircle");
+  const profileDropdown = document.getElementById("profileDropdown");
+  const profileName     = document.getElementById("profileName");
+  const profileInitSm   = document.getElementById("profileInitialSmall");
+  const welcomeMsg      = document.getElementById("welcomeMessage");
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const username   = localStorage.getItem("username");
+
+  if (isLoggedIn === "true" && username) {
+    // Hide login link
+    loginLink.style.display = "none";
+
+    // Set initials
+    const initial = username.charAt(0).toUpperCase();
+    profileCircle.textContent = initial;
+    profileInitSm.textContent = initial;
+    profileName.textContent = username;
+    welcomeMsg.textContent = `Welcome back, ${username}!`;
+
+    // Show profile
+    profileCircle.style.display = "flex";
+
+    // Dropdown toggle
+    profileCircle.onclick = () => {
+      profileDropdown.classList.toggle("show");
+    };
+    document.addEventListener("click", (e) => {
+      if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+        profileDropdown.classList.remove("show");
+      }
+    });
+  } else {
+    profileCircle.style.display = "none";
+    loginLink.style.display = "inline-block";
+  }
+
+  // Logout
+  function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("username");
+    window.location.href = "signup_signin.html";
+  }
+</script>
+
+</body>
+</html>

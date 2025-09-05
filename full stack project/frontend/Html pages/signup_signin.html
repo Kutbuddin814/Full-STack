@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dual Access Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 35px 45px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      width: 380px;
+      text-align: center;
+    }
+    h2 { color: #333; margin-bottom: 20px; }
+    input, select {
+      width: 100%; padding: 12px; margin: 8px 0;
+      border-radius: 8px; border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    .password-container { position: relative; width: 100%; }
+    .toggle-password {
+      position: absolute; right: 12px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px; cursor: pointer;
+      color: #4e54c8; user-select: none;
+    }
+    button {
+      background-color: #4e54c8; color: #fff;
+      padding: 12px; border: none; border-radius: 8px;
+      font-size: 16px; width: 100%; cursor: pointer;
+      margin-top: 8px; transition: background-color 0.3s ease;
+    }
+    button:hover { background-color: #3f43a9; }
+    .toggle-link {
+      display: block; margin-top: 15px;
+      font-size: 14px; color: #4e54c8;
+      text-decoration: underline; cursor: pointer;
+    }
+    #responseText { margin-top: 15px; font-size: 14px; font-weight: bold; }
+    .hidden { display: none; }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required />
+      <div class="password-container">
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁</span>
+      </div>
+      <button type="submit">Login</button>
+      <span class="toggle-link" onclick="toggleForm('signup')">Don’t have an account? Sign up</span>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signupForm" class="hidden">
+      <input type="text" id="newUsername" placeholder="Username" required />
+      <input type="email" id="newEmail" placeholder="Email" required />
+      <div class="password-container">
+        <input type="password" id="newPassword" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword('newPassword')">👁</span>
+      </div>
+      <div class="password-container">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁</span>
+      </div>
+
+      <!-- Role Dropdown -->
+      <select id="newRole" required>
+        <option value="user">User</option>
+        <option value="client">Client</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+      <span class="toggle-link" onclick="toggleForm('login')">Already have an account? Login</span>
+    </form>
+
+    <p id="responseText"></p>
+  </div>
+
+  <script>
+    const API_BASE = "http://localhost:3000/api"; // backend server
+
+    function toggleForm(type) {
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+      const formTitle = document.getElementById("formTitle");
+      const responseText = document.getElementById("responseText");
+
+      if (type === "signup") {
+        loginForm.classList.add("hidden");
+        signupForm.classList.remove("hidden");
+        formTitle.innerText = "Sign Up";
+      } else {
+        signupForm.classList.add("hidden");
+        loginForm.classList.remove("hidden");
+        formTitle.innerText = "Login";
+      }
+      responseText.innerText = "";
+    }
+
+    function togglePassword(id) {
+      const field = document.getElementById(id);
+      field.type = field.type === "password" ? "text" : "password";
+    }
+
+    // LOGIN HANDLER
+    document.getElementById("loginForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const username = document.getElementById("loginUsername").value.trim();
+      const password = document.getElementById("loginPassword").value.trim();
+
+      try {
+        const response = await fetch(`${API_BASE}/login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password }),
+          mode: "cors"
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+          // save login info
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("username", data.user?.username || username);
+
+          document.getElementById("responseText").innerText = `Welcome, ${data.user?.username || username}!`;
+          document.getElementById("responseText").className = "success";
+          setTimeout(() => { window.location.href = "index.html"; }, 1200);
+        } else {
+          throw new Error(data.message || "Invalid credentials");
+        }
+      } catch (err) {
+        document.getElementById("responseText").innerText = "Login Error: " + err.message;
+        document.getElementById("responseText").className = "error";
+      }
+    });
+
+    // SIGNUP HANDLER
+    document.getElementById("signupForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const username = document.getElementById("newUsername").value.trim();
+      const email = document.getElementById("newEmail").value.trim();
+      const password = document.getElementById("newPassword").value.trim();
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+      const role = document.getElementById("newRole").value;
+
+      if (password !== confirmPassword) {
+        document.getElementById("responseText").innerText = "Passwords do not match!";
+        document.getElementById("responseText").className = "error";
+        return;
+      }
+
+      try {
+        const response = await fetch(`${API_BASE}/signup`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, email, password, role }),
+          mode: "cors"
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+          document.getElementById("responseText").innerText = data.message || "Signup successful!";
+          document.getElementById("responseText").className = "success";
+          // After signup, go to login form
+          setTimeout(() => toggleForm("login"), 1500);
+        } else {
+          throw new Error(data.message || "Signup failed");
+        }
+      } catch (err) {
+        document.getElementById("responseText").innerText = "Signup Error: " + err.message;
+        document.getElementById("responseText").className = "error";
+      }
+    });
+  </script>
+
+</body>
+</html>
