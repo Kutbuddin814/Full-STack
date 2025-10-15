@@ -1,0 +1,2026 @@
+
+******************* NVIFTP *******************
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:02:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,138).
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,139).
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:02:57 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,140).
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,141).
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,142).
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:02:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,143).
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,144).
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,145).
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,146).
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,147).
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,148).
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:03 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,149).
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:04 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,150).
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:05 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,151).
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,152).
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,153).
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,154).
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:07 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,155).
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,156).
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,157).
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,158).
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:11 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,159).
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,160).
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,161).
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,162).
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:15 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,164).
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,165).
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,166).
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,167).
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,168).
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,169).
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,170).
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,171).
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:20 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,172).
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:21 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,176).
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:22 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,177).
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,178).
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:23 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,179).
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,180).
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,181).
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,182).
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:25 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,183).
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,184).
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,185).
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,186).
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,187).
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,188).
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,189).
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,190).
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,191).
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,192).
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:34 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,193).
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,194).
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:35 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,196).
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,197).
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:36 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,198).
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,199).
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,200).
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,201).
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:39 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,202).
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:40 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:41 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,206).
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:42 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,207).
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,208).
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,209).
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:03:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,210).
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:44 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,211).
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,212).
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:45 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,213).
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,214).
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:46 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,215).
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,216).
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:03:47 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,217).
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,218).
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:03:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,219).
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,220).
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:03:50 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,221).
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:03:51 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,222).
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:03:52 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,223).
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,224).
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:03:53 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,225).
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,226).
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:03:55 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,227).
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,228).
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:03:57 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,229).
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,230).
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:03:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,231).
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,232).
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,233).
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,234).
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,235).
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,239).
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:03 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,240).
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,241).
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:04 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,242).
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,243).
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,244).
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,245).
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:08 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,248).
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,249).
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,250).
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,251).
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:11 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,252).
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,253).
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:04:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,254).
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,11,255).
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:15 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,0).
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,1).
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,2).
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,3).
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,4).
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,5).
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,6).
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,10).
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,11).
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:20 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,12).
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:21 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,13).
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,14).
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:22 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,15).
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,16).
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,17).
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,18).
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,19).
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,20).
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,21).
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,25).
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:29 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,27).
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,28).
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,29).
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,30).
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,31).
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,32).
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:33 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,33).
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,34).
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:35 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:36 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,35).
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,36).
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:37 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,37).
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,38).
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,39).
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,40).
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:04:40 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,41).
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,42).
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:41 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,43).
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,44).
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:04:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,45).
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:04:44 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,46).
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:45 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,47).
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,48).
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:46 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,49).
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,53).
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:04:48 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,54).
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,55).
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:04:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,56).
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 213 238477
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,57).
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230334.JPG
+11/30/2012 1:04:50 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 213 2724
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,59).
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230334.JPG
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 213 328629
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,60).
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230333.JPG
+11/30/2012 1:04:52 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 213 3167
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,61).
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230333.JPG
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,62).
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:04:54 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,63).
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,64).
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230324.JPG
+11/30/2012 1:04:56 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 213 2573
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,65).
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230324.JPG
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 213 201201
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,66).
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_13.JPG
+11/30/2012 1:04:58 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 213 3437
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,67).
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_13.JPG
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 213 123740
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,68).
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_07.JPG
+11/30/2012 1:04:59 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 213 2595
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,69).
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_07.JPG
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,70).
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,71).
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,72).
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,73).
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,74).
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:05:03 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,75).
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,79).
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_04.JPG
+11/30/2012 1:05:05 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 213 2668
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,80).
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,84).
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:06 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,85).
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:07 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: 213 221569
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,86).
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_06.JPG
+11/30/2012 1:05:08 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 213 3221
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,87).
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_06.JPG
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,91).
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:05:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,92).
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:05:11 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,93).
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230329.JPG
+11/30/2012 1:05:12 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: 213 2838
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,94).
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230329.JPG
+11/30/2012 1:05:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,95).
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/DIWALI08_05.JPG
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 213 3022
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,96).
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:14 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: 213 275577
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,97).
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123/P6230338.JPG
+11/30/2012 1:05:15 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: 213 2395
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,98).
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/6/123_thumbnails/P6230338.JPG
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:16 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,102).
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,103).
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,104).
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:19 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,107).
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:21 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,108).
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:22 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,109).
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,113).
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:25 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,114).
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:27 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,115).
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,116).
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,117).
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:29 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,118).
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,119).
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:30 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,120).
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,121).
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:33 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,122).
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:35 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,126).
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:36 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,127).
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,128).
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:37 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,129).
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,130).
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:38 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,131).
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:40 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,132).
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:41 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,134).
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:43 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,138).
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:44 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,139).
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:46 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,140).
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,141).
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:47 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,142).
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:48 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,143).
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,144).
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:49 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,145).
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:50 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:51 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,149).
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:05:52 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,150).
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,151).
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:05:53 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,152).
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,153).
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:05:54 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,154).
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:05:56 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,155).
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:05:57 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:58 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:05:58 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,156).
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:05:59 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,160).
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:00 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,161).
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,162).
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:01 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,163).
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,164).
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:02 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,166).
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:04 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,167).
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:05 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,168).
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:07 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,172).
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:08 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,173).
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,174).
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:09 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,175).
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,176).
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:10 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,177).
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:12 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,178).
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:13 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,179).
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:14 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:15 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,183).
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:16 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,184).
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,185).
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:17 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,186).
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,187).
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:18 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,188).
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:20 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,189).
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:21 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,190).
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:22 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:23 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,194).
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:24 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,195).
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,196).
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:25 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,197).
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,198).
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:26 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,199).
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:28 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,200).
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:29 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,201).
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:31 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: 213 147356
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,205).
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_04.JPG
+11/30/2012 1:06:32 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 213 47712
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,206).
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_04.JPG
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 213 127992
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,207).
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/DIWALI08_05.JPG
+11/30/2012 1:06:33 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 213 55494
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,208).
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/DIWALI08_05.JPG
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 213 263429
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,209).
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230324.JPG
+11/30/2012 1:06:34 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: 213 144717
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,210).
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230324.JPG
+11/30/2012 1:06:36 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: 213 332450
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,211).
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112/P6230329.JPG
+11/30/2012 1:06:37 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: SIZE /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: 213 159740
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: PASV
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: 227 Entering Passive Mode (172,16,1,124,12,214).
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: RETR /ftpusr1/DesignServices/4/14/112_thumbnails/P6230329.JPG
+11/30/2012 1:06:39 PM: 172.16.1.124: DSDownload: 125 Data connection already open; Transfer starting.
+11/30/2012 1:06:40 PM: 172.16.1.124: DSDownload: 226 Transfer complete.
+11/30/2012 1:06:40 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:07:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:12:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:17:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:22:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:27:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:32:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:37:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:42:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:47:56 PM: 172.16.1.124: DSDownload: QUIT
+
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 220 Microsoft FTP Service
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: AUTH TLS
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 500 'AUTH TLS': command not understood
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: USER ftpusr1
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 331 Password required for ftpusr1.
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: PASS ********
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 230 User ftpusr1 logged in.
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: FEAT
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 211 FEAT
+SIZE
+MDTM
+END
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: TYPE I
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: 200 Type set to I.
+11/30/2012 1:52:56 PM: 172.16.1.124: DSDownload: QUIT
+
