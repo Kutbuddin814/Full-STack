@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Flezidesk</title>
+  <style>
+  :root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --danger-dark: #c0392b;
+      --card: #fff;
+      --muted: #f8f9fc;
+      --text: #333;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      background: #fff;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg);
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-weight: 600;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+#mainNav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px;
+}
+.profile-wrap {
+  margin-left: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+    }
+
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+
+
+    #mainNav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s var(--transition-ease), color 0.3s var(--transition-ease);
+    }
+
+    #mainNav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+
+
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+    }
+
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.25s var(--transition-ease), transform 0.25s var(--transition-ease);
+      z-index: 200;
+    }
+
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+    }
+
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .main-container {
+      max-width: 720px;
+      margin: 36px auto 48px;
+      padding: 0 24px;
+    }
+
+    .mini-section {
+  max-width: 700px;
+  margin: 36px auto 48px;
+  padding: 32px 18px 40px 18px;
+  background: #f2f6fa;
+  border-radius: 22px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.mini-card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mini-card {
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+  background: var(--card);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 28px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .mini-section {
+    padding: 16px 2vw 24px 2vw;
+  }
+  .mini-card {
+    max-width: 99vw;
+    width: 100%;
+    padding: 14px 7px;
+  }
+}
+
+    .mini-section h2 {
+      color: #222;
+      font-size: 1.18rem;
+      margin-bottom: 14px;
+    }
+
+  
+
+
+    .mini-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .mini-info {
+      color: #666;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex-grow: 1;
+      min-width: 200px;
+    }
+
+    .mini-title {
+      font-weight: 600;
+      color: #333;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .status {
+      font-weight: 400;
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      user-select: none;
+      box-shadow: 0 0 12px rgba(108, 92, 231, 0.28);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .status.pending {
+      background: #fff4d8;
+      color: #b89900;
+    }
+
+    .status.in-progress {
+      background: #e6e0ff;
+      color: #7568ff;
+    }
+
+    .status.completed {
+      background: #d6f7e5;
+      color: #219766;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-action,
+    .btn-danger {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(108, 92, 231, 0.13), 0 2px 6px #ececec;
+      transition: background 0.18s, transform 0.14s;
+    }
+
+    .btn-action {
+      background: linear-gradient(90deg, #7c5bfb 50%, #6c5ce7 100%);
+      color: #fff;
+    }
+
+    .btn-action:hover {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .btn-danger {
+      background: linear-gradient(90deg, #f25d5d 60%, #e74c3c 100%);
+      color: #fff;
+    }
+
+    .btn-danger:hover {
+      background: linear-gradient(90deg, #e74c3c 80%, #c0392b 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .add-project-section {
+      background: #fff;
+      max-width: 670px;
+      margin: 0 auto 30px auto;
+      padding: 32px 42px 28px 42px;
+      border-radius: 22px;
+      box-shadow: 0 6px 36px 0 #6c5ce70d, 0 2px 6px 0 #d7d7f0;
+    }
+
+    .add-project-title {
+      margin-bottom: 22px;
+      font-size: 1.33rem;
+      font-weight: 700;
+      color: var(--nav-bg);
+    }
+
+    .add-project-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .add-project-form input,
+    .add-project-form select {
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1.7px solid #eaeaf5;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px 0 #f3f3ff;
+      outline: none;
+      min-width: 160px;
+      flex: 1;
+      background: #f8f9fc;
+    }
+
+    .add-project-form input:focus,
+    .add-project-form select:focus {
+      border-color: var(--accent);
+    }
+
+    .add-project-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 16px;
+      background: linear-gradient(90deg, #7c5bfb, #6c5ce7 86%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 9px 24px #6c5ce748, 0 2px 6px #e6e6fa;
+      white-space: nowrap;
+    }
+
+    .add-project-btn:hover {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+    .modal {
+      background: white;
+      padding: 24px 34px;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .modal h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--nav-bg);
+    }
+
+    .modal label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #444;
+      font-size: 1rem;
+    }
+
+    .modal input,
+    .modal select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 17px;
+      font-family: inherit;
+      margin-bottom: 18px;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
+    .btn-save {
+      background: linear-gradient(90deg, #7c5bfb 50%, #6c5ce7 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 14px 30px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-save:hover {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+    }
+
+    .btn-cancel {
+      background: linear-gradient(90deg, #f25d5d 60%, #e74c3c 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 14px 30px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-cancel:hover {
+      background: linear-gradient(90deg, #e74c3c 80%, #c0392b 100%);
+    }
+
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.16);
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-left">
+    <h2>
+      <a href="index.html"><img src="images/flezidesk.png" alt="Flezidesk Logo"/></a>
+      Flezidesk
+    </h2>
+  </div>
+  <div class="navbar-right">
+    <nav id="mainNav"></nav>
+    <div class="profile-wrap">
+      <button id="profileCircle"></button>
+      <div id="profileDropdown">
+        <p id="profileName"></p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="main-container" aria-label="Project Management">
+  <section class="mini-section" aria-label="Project List">
+    <h2>Your Projects</h2>
+    <div class="mini-card-list" id="miniProjectList"></div>
+  </section>
+
+  <section class="add-project-section" aria-label="Add Project" id="addProjectSection">
+    <h3 class="add-project-title">Add New Project</h3>
+    <form id="projectForm" class="add-project-form">
+      <input type="text" id="projectName" placeholder="Project Name" required />
+      <input type="date" id="projectDeadline" required />
+      <select id="projectClient" required></select>
+      <select id="projectStatus" required>
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+      </select>
+      <button type="submit" class="add-project-btn">Add Project</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+  <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+</footer>
+
+<!-- Edit modal -->
+<div class="modal-backdrop" id="editModalBackdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editModalTitle" tabindex="-1">
+    <h3 id="editModalTitle">Edit Project</h3>
+    <form id="editProjectForm">
+      <label for="editProjectName">Project Name</label>
+      <input type="text" id="editProjectName" name="editProjectName" required />
+      <label for="editProjectDeadline">Deadline</label>
+      <input type="date" id="editProjectDeadline" name="editProjectDeadline" required />
+      <label for="editProjectClient">Client</label>
+      <select id="editProjectClient" name="editProjectClient" required></select>
+      <label for="editProjectStatus">Status</label>
+      <select id="editProjectStatus" name="editProjectStatus" required>
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+      </select>
+      <div class="modal-buttons">
+        <button class="btn-save" type="submit">Save</button>
+        <button class="btn-cancel" type="button" id="cancelEditBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+const mainNav = document.getElementById('mainNav');
+const profileCircle = document.getElementById("profileCircle");
+const profileDropdown = document.getElementById("profileDropdown");
+const profileName = document.getElementById("profileName");
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+const username = localStorage.getItem("username");
+const role = localStorage.getItem("role");
+
+// Hide Add Project for non-admin
+if (role !== "admin") {
+  const addProject = document.getElementById("addProjectSection");
+  if (addProject) addProject.style.display = "none";
+}
+
+const navItemsByRole = {
+  admin: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "clients.html", label: "Clients" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  client: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  freelancer: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ],
+  user: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ]
+};
+
+function renderNav() {
+  let userRole = role || "admin";
+  let navItems = navItemsByRole[userRole] || navItemsByRole.admin;
+  mainNav.innerHTML = "";
+  navItems.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.innerText = item.label;
+    if(location.pathname.endsWith(item.href)) a.className = "active";
+    mainNav.appendChild(a);
+  });
+}
+document.addEventListener("DOMContentLoaded", renderNav);
+
+if (isLoggedIn !== "true" || !username || !role) {
+  window.location.href = "signup_signin.html";
+} else {
+  profileCircle.style.display = "flex";
+  profileCircle.textContent = username.charAt(0).toUpperCase();
+  profileName.textContent = username;
+  profileCircle.onclick = () => profileDropdown.classList.toggle("show");
+  document.addEventListener("click", e => {
+    if(!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+      profileDropdown.classList.remove("show");
+    }
+  });
+}
+function logout() {
+  localStorage.clear();
+  window.location.href = "signup_signin.html";
+}
+
+// Access control
+if (!["admin", "client", "freelancer", "user"].includes(role)) {
+  document.body.innerHTML = `<section style="max-width:600px;margin:80px auto;text-align:center;font-size:1.3rem;color:#d63031;font-weight:700;">Access denied - You do not have access to Projects</section>`;
+  throw "";
+}
+
+const API_BASE = "http://localhost:3000/api";
+const miniProjectList = document.getElementById("miniProjectList");
+const projectForm = document.getElementById("projectForm");
+const editModal = document.getElementById("editModalBackdrop");
+const editProjectForm = document.getElementById("editProjectForm");
+const cancelEditBtn = document.getElementById("cancelEditBtn");
+let projectsData = [];
+let editingProjectId = null;
+
+function loadClientDropdown(dropdownId, selectedValue) {
+  fetch(`${API_BASE}/users`)
+    .then(res => res.json())
+    .then(users => {
+      const select = document.getElementById(dropdownId);
+      select.innerHTML = '<option value="">Select User</option>';
+      users
+        .filter(user => user.role !== "admin")
+        .forEach(user => {
+          const opt = document.createElement('option');
+          opt.value = user.username;
+          opt.textContent = `${user.username} (${user.role})`;
+          if (selectedValue && user.username === selectedValue) opt.selected = true;
+          select.appendChild(opt);
+        });
+    });
+}
+if (role === "admin") loadClientDropdown("projectClient");
+function loadEditClientDropdown(selectedValue) { loadClientDropdown("editProjectClient", selectedValue); }
+
+async function fetchProjects() {
+  try {
+    let url = `${API_BASE}/projects`;
+    if (role !== "admin") {
+      url += `?client=${encodeURIComponent(username)}`;
+    }
+    const response = await fetch(url);
+    projectsData = await response.json();
+    loadProjects();
+  } catch {
+    alert("Failed to load projects.");
+  }
+}
+document.addEventListener("DOMContentLoaded", fetchProjects);
+
+function loadProjects() {
+  miniProjectList.innerHTML = "";
+  const minShow = 2;
+  const initialProjects = projectsData.slice(0, minShow);
+  const remainingProjects = projectsData.slice(minShow);
+  initialProjects.forEach(prj => miniProjectList.appendChild(createProjectCard(prj)));
+  if (remainingProjects.length > 0) {
+    const hiddenCards = remainingProjects.map(createProjectCard);
+    const seeMoreLink = document.createElement("a");
+    seeMoreLink.href = "#";
+    seeMoreLink.textContent = `See ${remainingProjects.length} More Project${remainingProjects.length > 1 ? 's' : ''}`;
+    seeMoreLink.style.display = "block";
+    seeMoreLink.style.marginTop = "12px";
+    seeMoreLink.style.color = "var(--accent)";
+    seeMoreLink.style.cursor = "pointer";
+    seeMoreLink.style.userSelect = "none";
+    let revealed = false;
+    seeMoreLink.onclick = (e) => {
+      e.preventDefault();
+      if (!revealed) {
+        hiddenCards.forEach(card => miniProjectList.appendChild(card));
+        seeMoreLink.remove();
+        revealed = true;
+      }
+    };
+    miniProjectList.appendChild(seeMoreLink);
+  }
+}
+
+function createProjectCard(prj) {
+  const card = document.createElement("div");
+  card.className = "mini-card";
+  const infoDiv = document.createElement("div");
+  infoDiv.className = "project-info";
+  const title = document.createElement("div");
+  title.className = "mini-title";
+  title.textContent = prj.name || "Unnamed Project";
+  const statusSpan = document.createElement("span");
+  statusSpan.className = "status " + (prj.status ? prj.status.toLowerCase().replace(" ", "-") : "unknown");
+  statusSpan.textContent = prj.status || "Unknown";
+  title.appendChild(statusSpan);
+  infoDiv.appendChild(title);
+  const clientPara = document.createElement("div");
+  clientPara.className = "mini-info";
+  clientPara.textContent = "Assigned: " + (prj.client || "N/A");
+  infoDiv.appendChild(clientPara);
+  const deadlinePara = document.createElement("div");
+  deadlinePara.className = "mini-info";
+  deadlinePara.textContent = "Deadline: " + (prj.deadline ? new Date(prj.deadline).toLocaleDateString() : "N/A");
+  infoDiv.appendChild(deadlinePara);
+  if (role === "admin") {
+    const btnContainer = document.createElement("div");
+    btnContainer.className = "action-buttons";
+    const editBtn = document.createElement("button");
+    editBtn.type = "button";
+    editBtn.className = "btn-action";
+    editBtn.innerHTML = "✏️ Edit";
+    editBtn.onclick = () => openEditModal(prj);
+    const deleteBtn = document.createElement("button");
+    deleteBtn.type = "button";
+    deleteBtn.className = "btn-danger";
+    deleteBtn.innerHTML = "🗑 Delete";
+    deleteBtn.onclick = () => deleteProject(prj.id);
+    btnContainer.appendChild(editBtn);
+    btnContainer.appendChild(deleteBtn);
+    infoDiv.appendChild(btnContainer);
+  }
+  card.appendChild(infoDiv);
+  return card;
+}
+
+if (projectForm) projectForm.style.display = (role === "admin") ? "flex" : "none";
+if (role === "admin" && projectForm) {
+  projectForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const projectData = {
+      name: document.getElementById("projectName").value.trim(),
+      deadline: document.getElementById("projectDeadline").value,
+      client: document.getElementById("projectClient").value.trim(),
+      status: document.getElementById("projectStatus").value
+    };
+    if (!projectData.name || !projectData.deadline || !projectData.client || !projectData.status) {
+      alert("Please fill all required fields.");
+      return;
+    }
+    try {
+      const response = await fetch(`${API_BASE}/projects`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(projectData)
+      });
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || data.message || "Failed to add project");
+      }
+      projectForm.reset();
+      fetchProjects();
+      alert("✅ Project added successfully!");
+    } catch (err) {
+      alert("❌ " + err.message);
+    }
+  });
+}
+
+function openEditModal(prj) {
+  editingProjectId = prj.id;
+  document.getElementById("editProjectName").value = prj.name || "";
+  document.getElementById("editProjectDeadline").value = prj.deadline ? new Date(prj.deadline).toISOString().split("T")[0] : "";
+  loadEditClientDropdown(prj.client);
+  document.getElementById("editProjectStatus").value = prj.status || "Pending";
+  editModal.classList.add("show");
+  editModal.setAttribute("aria-hidden", "false");
+  document.getElementById("editProjectName").focus();
+}
+
+cancelEditBtn.addEventListener("click", () => { closeModal(); });
+editProjectForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const updatedProject = {
+    name: document.getElementById("editProjectName").value.trim(),
+    deadline: document.getElementById("editProjectDeadline").value,
+    client: document.getElementById("editProjectClient").value.trim(),
+    status: document.getElementById("editProjectStatus").value
+  };
+  if (!updatedProject.name || !updatedProject.deadline || !updatedProject.client || !updatedProject.status) {
+    alert("Please fill all required fields.");
+    return;
+  }
+  try {
+    const response = await fetch(`${API_BASE}/projects/${editingProjectId}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedProject)
+    });
+    if (!response.ok) {
+      const data = await response.json();
+      throw new Error(data.error || data.message || "Failed to update project");
+    }
+    closeModal();
+    fetchProjects();
+    alert("✅ Project updated successfully!");
+  } catch (err) {
+    alert("❌ " + err.message);
+  }
+});
+
+function closeModal() {
+  editingProjectId = null;
+  editModal.classList.remove("show");
+  editModal.setAttribute("aria-hidden", "true");
+}
+function deleteProject(id) {
+  if (!confirm(`Are you sure you want to delete project ${id}?`)) return;
+  fetch(`${API_BASE}/projects/${id}`, { method: "DELETE" })
+    .then(res => {
+      if (!res.ok) throw new Error("Failed to delete project");
+      return res.json();
+    })
+    .then(() => {
+      alert("Project deleted");
+      fetchProjects();
+    })
+    .catch(err => alert(err.message));
+}
+
+</script>
+</body>
+</html>

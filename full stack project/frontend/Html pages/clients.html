@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clients - Flezidesk</title>
+  <style>
+    :root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --danger-dark: #c0392b;
+      --card: #fff;
+      --muted: #f8f9fc;
+      --text: #333;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      color: var(--text);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+     .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav-bg);
+      color: white;
+      padding: 16px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      font-weight: 600;
+    }
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+    }
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+    }
+    .navbar nav#mainNav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-left: auto;
+    }
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s var(--transition-ease), color 0.3s var(--transition-ease);
+    }
+    .navbar nav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+    }
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+    }
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.25s var(--transition-ease), transform 0.25s var(--transition-ease);
+      z-index: 200;
+    }
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+    }
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    main.main-container {
+      max-width: 720px;
+      margin: 36px auto 48px;
+      padding: 0 24px;
+    }
+
+    .mini-section {
+      background: #f2f6fa;
+      border-radius: 22px;
+      padding: 32px 18px 40px 18px;
+      margin-bottom: 40px;
+      max-width: 700px;
+    }
+
+    .mini-section h2 {
+      color: #222;
+      font-size: 1.18rem;
+      margin-bottom: 14px;
+    }
+
+    .mini-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .mini-card {
+      width: 95%;
+      max-width: 540px;
+      min-width: 320px;
+      background: var(--card);
+      border-radius: 20px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 26px 38px 26px 32px;
+      box-shadow: var(--shadow);
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+    }
+
+    .mini-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .mini-info {
+      color: #666;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex-grow: 1;
+      min-width: 200px;
+    }
+
+    .mini-title {
+      font-weight: 600;
+      color: #333;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-action,
+    .btn-danger {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(108, 92, 231, 0.13), 0 2px 6px #ececec;
+      transition: background 0.18s, transform 0.14s;
+      outline: none;
+    }
+
+    .btn-action {
+      background: linear-gradient(90deg, #7c5bfb 50%, #6c5ce7 100%);
+      color: #fff;
+    }
+
+    .btn-action:hover,
+    .btn-action:focus {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .btn-danger {
+      background: linear-gradient(90deg, #f25d5d 60%, #e74c3c 100%);
+      color: #fff;
+    }
+
+    .btn-danger:hover,
+    .btn-danger:focus {
+      background: linear-gradient(90deg, #e74c3c 80%, #c0392b 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .add-project-section {
+      background: white;
+      padding: 32px 42px 28px 42px;
+      border-radius: 22px;
+      box-shadow: 0 6px 36px 0 #6c5ce70d, 0 2px 6px 0 #d7d7f0;
+      max-width: 670px;
+      margin: 0 auto 40px;
+    }
+
+    .add-project-title {
+      margin-bottom: 22px;
+      font-size: 1.33rem;
+      font-weight: 700;
+      color: var(--nav-bg);
+      letter-spacing: 0.02em;
+    }
+
+    .add-project-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .add-project-form input,
+    .add-project-form select {
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1.7px solid #eaeaf5;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px 0 #f3f3ff;
+      outline: none;
+      min-width: 160px;
+      flex: 1;
+      background: #f8f9fc;
+      transition: border 0.18s;
+    }
+
+    .add-project-form input:focus,
+    .add-project-form select:focus {
+      border-color: var(--accent);
+    }
+
+    .add-project-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 16px;
+      background: linear-gradient(90deg, #7c5bfb, #6c5ce7 86%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 9px 24px #6c5ce748, 0 2px 6px #e6e6fa;
+      white-space: nowrap;
+      transition: background 0.22s, transform 0.15s;
+    }
+
+    .add-project-btn:hover,
+    .add-project-btn:focus {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    @media (max-width: 700px) {
+      .add-project-form {
+        gap: 12px;
+        flex-direction: column;
+      }
+
+      .add-project-form input,
+      .add-project-form select {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .add-project-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Modal for edit client */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+    .modal {
+      background: white;
+      padding: 24px 34px;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      user-select: text;
+      box-sizing: border-box;
+    }
+
+    .modal h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--nav-bg);
+    }
+
+    .modal label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #444;
+      font-size: 1rem;
+    }
+
+    .modal input,
+    .modal select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 17px;
+      font-family: inherit;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      transition: border-color 0.25s ease;
+    }
+
+    .modal input:focus,
+    .modal select:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
+    .btn-save {
+      background: linear-gradient(90deg, #7c5bfb 50%, #6c5ce7 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 14px 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.25s;
+      border: none;
+      box-shadow: 0 4px 18px rgba(108, 92, 231, 0.13);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-save:hover,
+    .btn-save:focus {
+      background: linear-gradient(90deg, #6c5ce7 80%, #5548c8 100%);
+    }
+
+    .btn-cancel {
+      background: linear-gradient(90deg, #f25d5d 60%, #e74c3c 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 14px 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.25s;
+      border: none;
+      box-shadow: 0 4px 18px rgba(231, 76, 60, 0.13);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-cancel:hover,
+    .btn-cancel:focus {
+      background: linear-gradient(90deg, #e74c3c 80%, #c0392b 100%);
+    }
+
+    .btn-save svg,
+    .btn-cancel svg {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: middle;
+    }
+
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      transition: text-decoration 0.25s ease;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+  <h2>
+    <a href="index.html"><img src="images/flezidesk.png" alt="Flezidesk Logo"/></a>
+    Flezidesk
+  </h2>
+  <div style="flex:1"></div>
+  <nav id="mainNav" class="centered-nav"></nav>
+  <div class="profile-wrap">
+    <button id="profileCircle" aria-haspopup="true" aria-expanded="false" aria-label="Open user profile menu"></button>
+    <div id="profileDropdown" role="menu" aria-label="User Profile Menu">
+      <p id="profileName" aria-live="polite"></p>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+  <main class="main-container" aria-label="Clients">
+    <section class="mini-section" aria-label="Client List">
+      <h2>Your Clients</h2>
+      <div class="mini-card-list" id="miniClientList"></div>
+    </section>
+    <section class="add-project-section" aria-label="Add New Client">
+      <h3 class="add-project-title">Add New Client</h3>
+      <form id="clientForm" class="add-project-form">
+        <input type="text" id="clientName" placeholder="Client Name" required />
+        <input type="email" id="clientEmail" placeholder="Client Email" required />
+        <input type="text" id="clientPhone" placeholder="Client Phone" required />
+        <button type="submit" class="add-project-btn">Add Client</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+  <div class="modal-backdrop" id="editModalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editModalTitle" tabindex="-1">
+      <h3 id="editModalTitle">Edit Client</h3>
+      <form id="editClientForm">
+        <label for="editClientName">Client Name</label>
+        <input type="text" id="editClientName" name="editClientName" required />
+        <label for="editClientEmail">Client Email</label>
+        <input type="email" id="editClientEmail" name="editClientEmail" required />
+        <label for="editClientPhone">Client Phone</label>
+        <input type="text" id="editClientPhone" name="editClientPhone" required />
+        <div class="modal-buttons">
+          <button class="btn-save" type="submit">Save</button>
+          <button class="btn-cancel" type="button" id="cancelEditBtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    // --- Role-based nav ---
+
+    const profileCircle = document.getElementById("profileCircle");
+    const profileDropdown = document.getElementById("profileDropdown");
+    const profileName = document.getElementById("profileName");
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const username = localStorage.getItem("username");
+    const mainNav = document.getElementById('mainNav');
+    const role = localStorage.getItem("role");
+
+    const navItemsByRole = {
+  admin: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "clients.html", label: "Clients" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  client: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  freelancer: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ],
+  user: [
+    { href: "dashboard.html", label: "Dashboard" },   // (rename as you wish)
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ]
+};
+
+
+    function renderNav() {
+      let userRole = role || "admin";
+      let navItems = navItemsByRole[userRole] || navItemsByRole.admin;
+      mainNav.innerHTML = "";
+      navItems.forEach(item => {
+        const a = document.createElement('a');
+        a.href = item.href;
+        a.innerText = item.label;
+        if (location.pathname.endsWith(item.href)) a.className = "active";
+        mainNav.appendChild(a);
+      });
+    }
+    renderNav();
+
+
+    // --- Role guard and profile ---
+    if (isLoggedIn === "true" && username) {
+      profileCircle.style.display = "flex";
+      profileCircle.textContent = username.charAt(0).toUpperCase();
+      profileName.textContent = username;
+      profileCircle.onclick = () => profileDropdown.classList.toggle("show");
+      document.addEventListener("click", e => {
+        if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+          profileDropdown.classList.remove("show");
+        }
+      });
+    } else {
+      window.location.href = "signup_signin.html";
+    }
+    function logout() {
+      localStorage.clear();
+      window.location.href = "signup_signin.html";
+    }
+
+    // Only admin can see/manage clients
+    if (role !== "admin") {
+      document.querySelector(".main-container").innerHTML = `
+      <section class="mini-section" aria-label="Access Denied">
+        <h2>Access Denied</h2>
+        <p style="color:#c0392b; font-weight:600; margin-top:14px;">You do not have permission to view this page.</p>
+      </section>
+    `;
+      document.querySelector(".add-project-section").style.display = "none";
+      // Exit early so page logic doesn't run
+      throw "";
+    }
+
+    // --- The rest is admin-only for clients...
+    const API_BASE = "http://localhost:3000/api";
+    const miniClientList = document.getElementById("miniClientList");
+    const clientForm = document.getElementById("clientForm");
+    const editModal = document.getElementById("editModalBackdrop");
+    const editClientForm = document.getElementById("editClientForm");
+    const cancelEditBtn = document.getElementById("cancelEditBtn");
+    let clientsData = [];
+    let editingClientId = null;
+
+    fetchClients();
+
+    async function fetchClients() {
+      try {
+        const response = await fetch(API_BASE + "/clients");
+        clientsData = await response.json();
+        loadClients();
+        localStorage.setItem('clientsCount', clientsData.length);
+        window.dispatchEvent(new CustomEvent('dataUpdated'));
+      } catch {
+        alert("Error fetching clients");
+      }
+    }
+
+    function loadClients() {
+      miniClientList.innerHTML = "";
+      const minShow = 2;
+      const initialClients = clientsData.slice(0, minShow);
+      const remainingClients = clientsData.slice(minShow);
+      initialClients.forEach(client => miniClientList.appendChild(createClientCard(client)));
+      if (remainingClients.length > 0) {
+        const hiddenCards = remainingClients.map(createClientCard);
+        const seeMoreLink = document.createElement("a");
+        seeMoreLink.href = "#";
+        seeMoreLink.textContent = `See ${remainingClients.length} More Client${remainingClients.length > 1 ? 's' : ''}`;
+        seeMoreLink.style.display = "block";
+        seeMoreLink.style.marginTop = "12px";
+        seeMoreLink.style.color = "var(--accent)";
+        seeMoreLink.style.cursor = "pointer";
+        seeMoreLink.style.userSelect = "none";
+        let revealed = false;
+        seeMoreLink.onclick = (e) => {
+          e.preventDefault();
+          if (!revealed) {
+            hiddenCards.forEach(card => miniClientList.appendChild(card));
+            seeMoreLink.remove();
+            revealed = true;
+          }
+        };
+        miniClientList.appendChild(seeMoreLink);
+      }
+    }
+
+    function createClientCard(client) {
+      const card = document.createElement("div");
+      card.className = "mini-card";
+      const avatar = document.createElement("div");
+      avatar.className = "mini-avatar";
+      avatar.textContent = client.name ? client.name.charAt(0).toUpperCase() : "?";
+      card.appendChild(avatar);
+      const infoDiv = document.createElement("div");
+      infoDiv.className = "project-info";
+      const title = document.createElement("div");
+      title.className = "mini-title";
+      title.textContent = client.name || "Unnamed Client";
+      const email = document.createElement("p");
+      email.className = "mini-info";
+      email.textContent = client.email || "Email missing";
+      const phone = document.createElement("p");
+      phone.className = "mini-info";
+      phone.textContent = client.phone || "Phone missing";
+      infoDiv.appendChild(title);
+      infoDiv.appendChild(email);
+      infoDiv.appendChild(phone);
+      const btnContainer = document.createElement("div");
+      btnContainer.className = "action-buttons";
+      const editBtn = document.createElement("button");
+      editBtn.type = "button";
+      editBtn.className = "btn-action";
+      editBtn.innerHTML = "✏️ Edit";
+      editBtn.onclick = () => openEditModal(client);
+      const deleteBtn = document.createElement("button");
+      deleteBtn.type = "button";
+      deleteBtn.className = "btn-danger";
+      deleteBtn.innerHTML = "🗑 Delete";
+      deleteBtn.onclick = () => deleteClient(client.id);
+      btnContainer.appendChild(editBtn);
+      btnContainer.appendChild(deleteBtn);
+      infoDiv.appendChild(btnContainer);
+      card.appendChild(infoDiv);
+      return card;
+    }
+
+    clientForm.addEventListener("submit", async e => {
+      e.preventDefault();
+      const newClient = {
+        name: document.getElementById("clientName").value.trim(),
+        email: document.getElementById("clientEmail").value.trim(),
+        phone: document.getElementById("clientPhone").value.trim(),
+      };
+      if (!newClient.name || !newClient.email || !newClient.phone) {
+        alert("Please fill all fields");
+        return;
+      }
+      try {
+        const res = await fetch(API_BASE + "/clients", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newClient)
+        });
+        if (!res.ok) {
+          const data = await res.json();
+          throw new Error(data.error || data.message || "Failed to add client");
+        }
+        clientForm.reset();
+        fetchClients();
+        alert("✅ Client added successfully!");
+      } catch (err) {
+        alert("❌ " + err.message);
+      }
+    });
+
+    function openEditModal(client) {
+      editingClientId = client.id;
+      document.getElementById("editClientName").value = client.name || "";
+      document.getElementById("editClientEmail").value = client.email || "";
+      document.getElementById("editClientPhone").value = client.phone || "";
+      editModal.classList.add("show");
+      editModal.setAttribute("aria-hidden", "false");
+      document.getElementById("editClientName").focus();
+    }
+
+    cancelEditBtn.addEventListener("click", () => {
+      closeModal();
+    });
+
+    editClientForm.addEventListener("submit", async e => {
+      e.preventDefault();
+      const updatedClient = {
+        name: document.getElementById("editClientName").value.trim(),
+        email: document.getElementById("editClientEmail").value.trim(),
+        phone: document.getElementById("editClientPhone").value.trim(),
+      };
+      if (!updatedClient.name || !updatedClient.email || !updatedClient.phone) {
+        alert("Please fill all fields");
+        return;
+      }
+      try {
+        const res = await fetch(API_BASE + "/clients/" + editingClientId, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(updatedClient)
+        });
+        if (!res.ok) {
+          const data = await res.json();
+          throw new Error(data.error || data.message || "Failed to update client");
+        }
+        closeModal();
+        fetchClients();
+        alert("✅ Client updated successfully!");
+      } catch (err) {
+        alert("❌ " + err.message);
+      }
+    });
+
+    function closeModal() {
+      editingClientId = null;
+      editModal.classList.remove("show");
+      editModal.setAttribute("aria-hidden", "true");
+    }
+    function deleteClient(id) {
+      if (!confirm(`Are you sure you want to delete this client?`)) return;
+      fetch(API_BASE + "/clients/" + id, { method: "DELETE" })
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to delete client");
+          return res.json();
+        })
+        .then(() => {
+          alert("Client deleted");
+          fetchClients();
+        })
+        .catch(err => alert(err.message));
+    }
+  </script>
+</body>
+
+</html>

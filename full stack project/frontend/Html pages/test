@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Flezidesk</title>
+  <style>
+    :root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --danger-dark: #c0392b;
+      --card: #fff;
+      --muted: #f8f9fc;
+      --text: #333;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav-bg);
+      color: white;
+      padding: 16px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+      font-weight: 600;
+    }
+
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+    }
+
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s var(--transition-ease), color 0.3s var(--transition-ease);
+    }
+
+    .navbar nav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+    }
+
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+    }
+
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: 0.25s var(--transition-ease);
+    }
+
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+    }
+
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .main {
+      flex: 1;
+      padding: 36px 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .main h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--nav-bg);
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px 24px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 14px 20px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+    }
+
+    th {
+      background: var(--muted);
+      color: var(--nav-bg);
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      padding: 8px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      user-select: text;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    select:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    button {
+      padding: 6px 12px;
+      margin-right: 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      user-select: none;
+      border: none;
+      color: white;
+      background-color: var(--accent);
+      box-shadow: 0 4px 14px rgb(108 92 231 / 0.6);
+      transition: background-color 0.25s var(--transition-ease);
+    }
+
+    button:hover,
+    button:focus-visible {
+      background-color: #5b4cd6;
+      outline-offset: 2px;
+      outline: 2px solid #a297ff;
+    }
+
+    button.btn-danger {
+      background: var(--danger);
+      box-shadow: 0 4px 14px rgb(231 76 60 / 0.6);
+    }
+
+    button.btn-danger:hover,
+    button.btn-danger:focus-visible {
+      background: var(--danger-dark);
+      outline-offset: 2px;
+      outline: 2px solid #f08080;
+    }
+
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>
+      <a href="index.html"><img src="images/flezidesk.png" alt="Flezidesk Logo" /></a>
+      Flezidesk
+    </h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="invoices.html">Invoices</a>
+      <a id="loginLink" href="signup_signin.html">Login</a>
+      <div class="profile-wrap">
+        <button id="profileCircle"></button>
+        <div id="profileDropdown">
+          <p id="profileName"></p>
+          <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Main -->
+  <main class="main">
+    <h2>📁 Project Management</h2>
+    <div class="grid">
+      <!-- Project List -->
+      <section class="card">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search projects…" />
+        </div>
+        <table id="projectsTable" aria-describedby="projects-desc" aria-live="polite">
+          <caption id="projects-desc" class="sr-only">List of projects with details and actions</caption>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Client</th>
+              <th>Deadline</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <!-- Add Project -->
+      <aside>
+        <section class="card">
+          <h3>Add New Project</h3>
+          <form id="projectForm">
+            <input type="text" id="projectName" placeholder="Project Name" required />
+            <input type="text" id="projectClient" placeholder="Client Name" required />
+            <input type="date" id="projectDeadline" required />
+            <select id="projectStatus" required>
+              <option>Pending</option>
+              <option>In Progress</option>
+              <option>Completed</option>
+            </select>
+            <button type="submit">➕ Add Project</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+  <script>
+    const API_BASE = "http://localhost:3000/api";
+    const loginLink = document.getElementById("loginLink");
+    const profileCircle = document.getElementById("profileCircle");
+    const profileDropdown = document.getElementById("profileDropdown");
+    const profileName = document.getElementById("profileName");
+    const projectsTableBody = document.querySelector("#projectsTable tbody");
+    const projectForm = document.getElementById("projectForm");
+    const searchInput = document.getElementById("search");
+    let editingProjectId = null;
+    let projectsData = [];
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const username = localStorage.getItem("username");
+    const role = localStorage.getItem("role");
+    if (isLoggedIn === "true" && username) {
+      loginLink.style.display = "none";
+      profileCircle.textContent = username.charAt(0).toUpperCase();
+      profileName.textContent = username;
+      profileCircle.style.display = "flex";
+      profileCircle.onclick = () => {
+        profileDropdown.classList.toggle("show");
+      };
+      fetchProjects();
+    } else {
+      window.location.href = "signup_signin.html";
+    }
+    function logout() {
+      localStorage.clear();
+      sessionStorage.setItem("logoutSuccess", "true");
+      window.location.href = "index.html";
+    }
+    async function fetchProjects() {
+      try {
+        const response = await fetch(`${API_BASE}/projects`);
+        projectsData = await response.json();
+        loadProjects();
+      } catch (err) {
+        alert("Error fetching projects");
+      }
+    }
+    function loadProjects() {
+      projectsTableBody.innerHTML = "";
+      if (projectsData.length === 0) return;
+      projectsData.forEach(project => {
+        const editing = editingProjectId === project.id;
+        const row = document.createElement("tr");
+        if (editing) {
+          row.innerHTML = `
+            <td><input type="text" id="editProjectName${project.id}" value="${project.name}" /></td>
+            <td><input type="text" id="editProjectClient${project.id}" value="${project.client}" /></td>
+            <td><input type="date" id="editProjectDeadline${project.id}" value="${project.deadline ? project.deadline : ''}" /></td>
+            <td>
+              <select id="editProjectStatus${project.id}">
+                <option value="Pending" ${project.status === "Pending" ? "selected" : ""}>Pending</option>
+                <option value="In Progress" ${project.status === "In Progress" ? "selected" : ""}>In Progress</option>
+                <option value="Completed" ${project.status === "Completed" ? "selected" : ""}>Completed</option>
+              </select>
+            </td>
+            <td>
+              <button onclick="saveProject(${project.id})">💾 Save</button>
+              <button class="btn-danger" onclick="cancelEdit()">✖ Cancel</button>
+            </td>
+          `;
+        } else {
+          row.innerHTML = `
+            <td>${project.name}</td>
+            <td>${project.client}</td>
+            <td>${project.deadline || ""}</td>
+            <td>${project.status}</td>
+            <td>
+              ${role === "admin" ? `<button onclick="editProject(${project.id})">✏️ Edit</button><button class="btn-danger" onclick="deleteProject(${project.id})">🗑 Delete</button>` : "-"}
+            </td>
+          `;
+        }
+        projectsTableBody.appendChild(row);
+      });
+      filterProjects(searchInput.value.toLowerCase());
+    }
+    projectForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const name = document.getElementById("projectName").value.trim();
+      const client = document.getElementById("projectClient").value.trim();
+      const deadline = document.getElementById("projectDeadline").value;
+      const status = document.getElementById("projectStatus").value;
+      if (!name || !client || !deadline || !status) {
+        alert("Please fill all fields");
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/projects`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, client, deadline, status })
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to add project");
+        }
+        projectForm.reset();
+        fetchProjects();
+        alert("✅ Project added successfully!");
+      } catch (err) {
+        alert("❌ " + err.message);
+      }
+    });
+    window.editProject = function(id) {
+      editingProjectId = id;
+      loadProjects();
+    };
+    window.saveProject = async function(id) {
+      const name = document.getElementById(`editProjectName${id}`).value.trim();
+      const client = document.getElementById(`editProjectClient${id}`).value.trim();
+      const deadline = document.getElementById(`editProjectDeadline${id}`).value;
+      const status = document.getElementById(`editProjectStatus${id}`).value;
+      if (!name || !client || !deadline || !status) {
+        alert("Please fill all fields");
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/projects/${id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, client, deadline, status })
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to update project");
+        }
+        editingProjectId = null;
+        fetchProjects();
+        alert(`✏️ Project #${id} updated!`);
+      } catch (err) {
+        alert("❌ " + err.message);
+      }
+    };
+    window.cancelEdit = function() {
+      editingProjectId = null;
+      loadProjects();
+    };
+    window.deleteProject = async function(id) {
+      if (!confirm(`Are you sure you want to delete Project #${id}?`)) return;
+      try {
+        const response = await fetch(`${API_BASE}/projects/${id}`, {
+          method: "DELETE"
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to delete project");
+        }
+        fetchProjects();
+        alert(`🗑 Project #${id} deleted!`);
+      } catch (err) {
+        alert("❌ " + err.message);
+      }
+    };
+    function filterProjects(filter) {
+      const rows = projectsTableBody.querySelectorAll("tr");
+      rows.forEach(row => {
+        const rowText = row.textContent.toLowerCase();
+        row.style.display = rowText.includes(filter) ? "" : "none";
+      });
+    }
+    searchInput.addEventListener("input", e => {
+      filterProjects(e.target.value.toLowerCase());
+    });
+  </script>
+</body>
+</html>
+
+
+
+invoices
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoices - Flezidesk</title>
+  <style>
+:root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --muted: #f8f9fc;
+      --text: #333;
+      --card: #fff;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav-bg);
+      color: white;
+      padding: 16px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+      font-weight: 600;
+      user-select: none;
+    }
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+      letter-spacing: 1.1px;
+      white-space: nowrap;
+      color: white;
+      font-weight: 700;
+    }
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+      display: inline-block;
+    }
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+    }
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s var(--transition-ease), color 0.3s var(--transition-ease);
+    }
+    .navbar nav a:hover,
+    .navbar nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.15);
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+    .navbar nav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      user-select: none;
+    }
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 8px rgb(108 92 231 / 0.6);
+      transition: background-color 0.3s ease;
+    }
+    #profileCircle:hover,
+    #profileCircle:focus-visible {
+      background-color: #5548c8;
+      outline-offset: 2px;
+      outline: 2px solid #b6a8ff;
+    }
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.25s var(--transition-ease), transform 0.25s var(--transition-ease);
+      z-index: 200;
+    }
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+      word-break: break-word;
+      user-select: text;
+    }
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgb(231 76 60 / 0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    #profileDropdown .logout-btn:hover,
+    #profileDropdown .logout-btn:focus-visible {
+      background: #c0392b;
+      outline-offset: 2px;
+      outline: 2px solid #f08080;
+    }
+    .main {
+      flex: 1;
+      padding: 36px 24px;
+      max-width: 1200px;
+      margin: auto;
+      user-select: none;
+    }
+    .card {
+      background: var(--card);
+      padding: 28px 24px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+      user-select: text;
+    }
+    h2 {
+      margin-bottom: 24px;
+      font-weight: 700;
+      color: var(--nav-bg);
+      font-size: 2.4rem;
+      letter-spacing: 0.03em;
+    }
+    .search-box {
+      margin-bottom: 20px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: inherit;
+      box-shadow: inset 0 4px 8px rgb(0 0 0 / 0.05);
+      transition: border-color 0.3s ease;
+    }
+    .search-box input:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 14px var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 0 30px rgb(108 92 231 / 0.08);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    th,
+    td {
+      padding: 14px 20px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+    }
+    th {
+      background: var(--muted);
+      color: var(--nav-bg);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    tr:hover {
+      background: #fafafa;
+      transition: background-color 0.25s ease;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      padding: 8px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      user-select: text;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus,
+    select:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 14px var(--accent);
+    }
+    button {
+      padding: 6px 12px;
+      margin-right: 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      user-select: none;
+      border: none;
+      color: white;
+      background-color: var(--accent);
+      box-shadow: 0 4px 14px rgb(108 92 231 / 0.6);
+      transition: background-color 0.25s var(--transition-ease);
+    }
+    button:hover,
+    button:focus-visible {
+      background-color: #5b4cd6;
+      outline-offset: 2px;
+      outline: 2px solid #a297ff;
+    }
+    button.btn-danger {
+      background: var(--danger);
+      box-shadow: 0 4px 14px rgb(231 76 60 / 0.6);
+    }
+    button.btn-danger:hover,
+    button.btn-danger:focus-visible {
+      background: var(--danger-dark);
+      outline-offset: 2px;
+      outline: 2px solid #f08080;
+    }
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.16);
+      margin-top: auto;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      transition: text-decoration 0.25s ease;
+    }
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #2ecc71;
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.35s ease;
+      z-index: 999;
+      user-select: none;
+      max-width: 320px;
+      text-align: center;
+      word-break: break-word;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }  </style>
+</head>
+<body>
+  <div class="navbar" role="banner" aria-label="Primary navigation">
+    <h2>
+      <a href="index.html" aria-label="Flezidesk Home">
+        <img src="images/flezidesk.png" alt="Flezidesk Logo" />
+      </a>
+      Flezidesk
+    </h2>
+    <nav>
+      <a href="index.html" tabindex="0">Home</a>
+      <a href="dashboard.html" class="nav-dashboard" tabindex="0">Dashboard</a>
+      <a href="clients.html" class="nav-clients" tabindex="0">Clients</a>
+      <a href="projects.html" class="nav-projects" tabindex="0">Projects</a>
+      <a href="tasks.html" class="nav-tasks" tabindex="0">Tasks</a>
+      <a href="invoices.html" class="nav-invoices active" aria-current="page" tabindex="0">Invoices</a>
+      <a id="loginLink" href="signup_signin.html" tabindex="0">Login</a>
+      <div class="profile-wrap">
+        <button id="profileCircle" aria-haspopup="true" aria-expanded="false" aria-label="Open user profile menu" tabindex="0"></button>
+        <div id="profileDropdown" role="menu" aria-label="User Profile Menu">
+          <p id="profileName" tabindex="0" aria-live="polite"></p>
+          <button class="logout-btn" onclick="logout()" tabindex="0">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main class="main" role="main">
+    <h2>💰 Invoice Management</h2>
+    <div class="grid">
+      <section class="card" aria-label="Invoice List">
+        <div class="search-box">
+          <label for="search" class="sr-only">Search invoices</label>
+          <input type="text" id="search" placeholder="Search invoices…" aria-controls="invoiceTable" aria-describedby="invoiceSearchDesc" />
+          <span id="invoiceSearchDesc" class="sr-only">Searches invoice ID, client, amount, due date, and status</span>
+        </div>
+        <table id="invoiceTable" role="table" aria-live="polite" aria-relevant="all" aria-rowcount="0">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Client</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <aside>
+        <section class="card" aria-label="Create new invoice">
+          <h3>Create New Invoice</h3>
+          <form id="invoiceForm" novalidate>
+            <input type="text" id="invoiceId" placeholder="Invoice ID (e.g., #INV004)" required aria-required="true" />
+            <input type="text" id="invoiceClient" placeholder="Client Name" required aria-required="true" />
+            <input type="number" id="invoiceAmount" placeholder="Amount" required aria-required="true" />
+            <input type="date" id="invoiceDue" required aria-required="true" />
+            <select id="invoiceStatus" required aria-required="true">
+              <option>Pending</option>
+              <option>Paid</option>
+              <option>Overdue</option>
+            </select>
+            <button type="submit">➕ Create Invoice</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer role="contentinfo">
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <script>
+    const API_BASE = "http://localhost:3000/api";
+    const loginLink = document.getElementById("loginLink");
+    const profileCircle = document.getElementById("profileCircle");
+    const profileDropdown = document.getElementById("profileDropdown");
+    const profileName = document.getElementById("profileName");
+    const toast = document.getElementById("toast");
+    const invoiceTableBody = document.querySelector("#invoiceTable tbody");
+    let editingInvoiceId = null;
+    let invoicesData = [];
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const username = localStorage.getItem("username");
+    const role = localStorage.getItem("role");
+
+    if (isLoggedIn === "true" && username) {
+      loginLink.style.display = "none";
+      profileCircle.textContent = username.charAt(0).toUpperCase();
+      profileName.textContent = username;
+      profileCircle.style.display = "flex";
+      profileCircle.onclick = () => profileDropdown.classList.toggle("show");
+      document.addEventListener("click", (e) => {
+        if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+          profileDropdown.classList.remove("show");
+        }
+      });
+      fetchInvoices();
+    } else {
+      window.location.href = "signup_signin.html";
+    }
+
+    // Search filtering
+    document.getElementById("search").addEventListener("input", function () {
+      const filter = this.value.toLowerCase();
+      const rows = document.querySelectorAll("#invoiceTable tbody tr");
+      rows.forEach(row => {
+        row.style.display = row.textContent.toLowerCase().includes(filter) ? "" : "none";
+      });
+    });
+
+    async function fetchInvoices() {
+      try {
+        const response = await fetch(`${API_BASE}/invoices`);
+        invoicesData = await response.json();
+        loadInvoices();
+      } catch (err) {
+        showToast("Error fetching invoices");
+      }
+    }
+
+    function loadInvoices() {
+      invoiceTableBody.innerHTML = "";
+      if (invoicesData.length === 0) {
+        invoiceTableBody.innerHTML = '<tr><td colspan="6">No invoices found</td></tr>';
+        return;
+      }
+      invoicesData.forEach(inv => {
+        const editing = editingInvoiceId === inv.id;
+        const tr = document.createElement('tr');
+        if (editing) {
+          tr.innerHTML = `
+            <td><input type="text" id="editInvoiceId${inv.id}" value="${inv.id}" /></td>
+            <td><input type="text" id="editInvoiceClient${inv.id}" value="${inv.client}" /></td>
+            <td><input type="number" id="editInvoiceAmount${inv.id}" value="${inv.amount}" /></td>
+            <td><input type="date" id="editInvoiceDue${inv.id}" value="${inv.due ? new Date(inv.due).toISOString().slice(0, 10) : ''}" /></td>
+            <td>
+              <select id="editInvoiceStatus${inv.id}">
+                <option value="Pending" ${inv.status === "Pending" ? "selected" : ""}>Pending</option>
+                <option value="Paid" ${inv.status === "Paid" ? "selected" : ""}>Paid</option>
+                <option value="Overdue" ${inv.status === "Overdue" ? "selected" : ""}>Overdue</option>
+              </select>
+            </td>
+            <td>
+              <button onclick="saveInvoice('${inv.id}')">💾 Save</button>
+              <button class="btn-danger" onclick="cancelEdit()">✖ Cancel</button>
+            </td>
+          `;
+        } else {
+          tr.innerHTML = `
+            <td>${inv.id}</td>
+            <td>${inv.client}</td>
+            <td>₹${inv.amount}</td>
+            <td>${inv.due ? new Date(inv.due).toLocaleDateString() : ''}</td>
+            <td>${inv.status}</td>
+            <td>
+              ${role === "admin" ? `<button onclick="editInvoice('${inv.id}')">✏️ Edit</button><button class="btn-danger" onclick="deleteInvoice('${inv.id}')">🗑 Delete</button>` : ""}
+            </td>
+          `;
+        }
+        invoiceTableBody.appendChild(tr);
+      });
+    }
+
+    document.getElementById("invoiceForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const invoiceData = {
+        id: document.getElementById('invoiceId').value.trim(),
+        client: document.getElementById('invoiceClient').value.trim(),
+        amount: Number(document.getElementById('invoiceAmount').value.trim()),
+        due: document.getElementById('invoiceDue').value,
+        status: document.getElementById('invoiceStatus').value
+      };
+      if (!invoiceData.id || !invoiceData.client || !invoiceData.amount || !invoiceData.due) {
+        showToast('Please fill all required fields.');
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/invoices`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(invoiceData)
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to add invoice");
+        }
+        e.target.reset();
+        fetchInvoices();
+        showToast('Invoice added successfully!');
+      } catch (err) {
+        showToast('❌ ' + err.message);
+      }
+    });
+
+    window.editInvoice = function(id) {
+      editingInvoiceId = id;
+      loadInvoices();
+    };
+
+    window.saveInvoice = async function(id) {
+      const idInput = document.getElementById(`editInvoiceId${id}`).value.trim();
+      const clientInput = document.getElementById(`editInvoiceClient${id}`).value.trim();
+      const amountInput = Number(document.getElementById(`editInvoiceAmount${id}`).value.trim());
+      const dueInput = document.getElementById(`editInvoiceDue${id}`).value;
+      const statusInput = document.getElementById(`editInvoiceStatus${id}`).value;
+      if (!idInput || !clientInput || !amountInput || !dueInput) {
+        showToast("Please fill all required fields.");
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/invoices/${id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ client: clientInput, amount: amountInput, due: dueInput, status: statusInput })
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to update invoice");
+        }
+        editingInvoiceId = null;
+        fetchInvoices();
+        showToast(`Invoice ${idInput} updated!`);
+      } catch (err) {
+        showToast("❌ " + err.message);
+      }
+    };
+
+    window.cancelEdit = function() {
+      editingInvoiceId = null;
+      loadInvoices();
+    };
+
+    window.deleteInvoice = async function(id) {
+      if (!confirm(`Are you sure you want to delete invoice ${id}?`)) return;
+      try {
+        const response = await fetch(`${API_BASE}/invoices/${id}`, {
+          method: "DELETE"
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to delete invoice");
+        }
+        fetchInvoices();
+        showToast(`Invoice ${id} deleted.`);
+      } catch (err) {
+        showToast("❌ " + err.message);
+      }
+    };
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 3000);
+    }
+
+    function logout() {
+      localStorage.clear();
+      showToast("Logged out ✅");
+      setTimeout(() => window.location.href = "signup_signin.html", 1000);
+    }
+  </script>
+</body>
+</html>
+
+
+
+tasks
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks - Flezidesk</title>
+  <style>
+    :root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --danger-dark: #c0392b;
+      --muted: #f8f9fc;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav-bg);
+      color: #fff;
+      padding: 16px 30px;
+      user-select: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      font-weight: 600;
+    }
+
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+      letter-spacing: 1.1px;
+    }
+
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s var(--transition-ease), color 0.3s var(--transition-ease);
+    }
+
+    .navbar nav a:hover,
+    .navbar nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.15);
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+
+    .navbar nav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      user-select: none;
+    }
+
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 8px rgba(108, 92, 231, 0.6);
+      transition: background-color 0.3s ease;
+    }
+
+    #profileCircle:hover,
+    #profileCircle:focus-visible {
+      background-color: #5548c8;
+      outline-offset: 2px;
+      outline: 2px solid #b6a8ff;
+    }
+
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.25s var(--transition-ease), transform 0.25s var(--transition-ease);
+      z-index: 200;
+    }
+
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+      word-break: break-word;
+      user-select: text;
+    }
+
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(231, 76, 60, 0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    #profileDropdown .logout-btn:hover,
+    #profileDropdown .logout-btn:focus-visible {
+      background: var(--danger-dark);
+      outline-offset: 2px;
+      outline: 2px solid #f08080;
+    }
+
+    .container {
+      padding: 36px 24px;
+      max-width: 1000px;
+      margin: auto;
+      width: 100%;
+      user-select: none;
+    }
+
+    .container h1 {
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 2.4rem;
+      letter-spacing: 0.02em;
+      color: var(--nav-bg);
+      user-select: text;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 0 40px rgba(108, 92, 231, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      user-select: text;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    th {
+      background: var(--muted);
+      color: var(--nav-bg);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    td:last-child {
+      white-space: nowrap;
+    }
+
+    tr:hover {
+      background: #fafafa;
+      transition: background-color 0.25s ease;
+    }
+
+    input,
+    select {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 14px;
+      margin-right: 10px;
+      font-size: 16px;
+      font-family: inherit;
+      user-select: text;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      user-select: none;
+      transition: background-color 0.25s ease;
+      box-shadow: 0 6px 20px rgba(108, 92, 231, 0.5);
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      background: #5446c8;
+      outline-offset: 3px;
+      outline: 3px solid #8077f4;
+    }
+
+    .btn-danger {
+      background: var(--danger);
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5);
+    }
+
+    .btn-danger:hover,
+    .btn-danger:focus-visible {
+      background: var(--danger-dark);
+      outline-offset: 3px;
+      outline: 3px solid #f08080;
+    }
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 26px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -4px 8px rgb(0 0 0 / 0.12);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      transition: text-decoration 0.25s ease;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar" role="banner" aria-label="Primary navigation">
+    <h2>
+      <a href="index.html" aria-label="Flezidesk Home">
+        <img src="images/flezidesk.png" alt="Flezidesk Logo" />
+      </a>
+      Flezidesk
+    </h2>
+    <nav>
+      <a href="index.html" tabindex="0">Home</a>
+      <a href="dashboard.html" tabindex="0">Dashboard</a>
+      <a href="clients.html" class="nav-clients" tabindex="0">Clients</a>
+      <a href="projects.html" tabindex="0">Projects</a>
+      <a href="tasks.html" class="active" aria-current="page" tabindex="0">Tasks</a>
+      <a href="invoices.html" tabindex="0">Invoices</a>
+      <a id="loginLink" href="signup_signin.html" tabindex="0">Login</a>
+      <div class="profile-wrap">
+        <button id="profileCircle" aria-haspopup="true" aria-expanded="false" aria-label="Open user profile menu"
+          tabindex="0"></button>
+        <div id="profileDropdown" role="menu" aria-label="User Profile Menu">
+          <p id="profileName" tabindex="0" aria-live="polite"></p>
+          <button class="logout-btn" onclick="logout()" tabindex="0">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container" role="main">
+    <h1>Tasks</h1>
+    <p id="restricted" aria-live="assertive"></p>
+    <table id="tasksTable" style="display:none;">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Task</th>
+          <th scope="col">Assigned To</th>
+          <th scope="col">Status</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tasksBody"></tbody>
+    </table>
+    <aside>
+      <section id="addTaskForm" aria-label="Add New Task Form">
+        <h3>Add New Task</h3>
+        <input type="text" id="newTaskName" placeholder="Task Name" required aria-required="true" />
+        <input type="text" id="newTaskAssignee" placeholder="Assigned To" required aria-required="true" />
+        <select id="newTaskStatus" aria-required="true">
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <button class="btn" onclick="addTask()">Add Task</button>
+      </section>
+    </aside>
+  </div>
+
+  <footer role="contentinfo">
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Help</a></p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+  <script>
+    const API_BASE = "http://localhost:3000/api";
+    const loginLink = document.getElementById("loginLink");
+    const profileCircle = document.getElementById("profileCircle");
+    const profileDropdown = document.getElementById("profileDropdown");
+    const profileName = document.getElementById("profileName");
+    const restricted = document.getElementById("restricted");
+    const tasksTable = document.getElementById("tasksTable");
+    const tasksBody = document.getElementById("tasksBody");
+    const addTaskForm = document.getElementById("addTaskForm");
+    const toast = document.getElementById("toast");
+    let editingTaskId = null;
+    let tasksData = [];
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const username = localStorage.getItem("username");
+    const role = localStorage.getItem("role");
+    if (isLoggedIn === "true" && username) {
+      loginLink.style.display = "none";
+      profileCircle.textContent = username.charAt(0).toUpperCase();
+      profileName.textContent = username;
+      profileCircle.style.display = "flex";
+      profileCircle.setAttribute("aria-expanded", "false");
+      profileCircle.onclick = () => {
+        const shown = profileDropdown.classList.toggle("show");
+        profileCircle.setAttribute("aria-expanded", shown);
+      };
+      document.addEventListener("click", (e) => {
+        if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+          profileDropdown.classList.remove("show");
+          profileCircle.setAttribute("aria-expanded", "false");
+        }
+      });
+      if (role === "admin") {
+        fetchTasks();
+        tasksTable.style.display = "table";
+        addTaskForm.style.display = "block";
+      } else {
+        fetchTasks(true);
+      }
+    } else {
+      window.location.href = "signup_signin.html";
+    }
+    async function fetchTasks(onlyMine = false) {
+      try {
+        const response = await fetch(`${API_BASE}/tasks`);
+        const data = await response.json();
+        if (onlyMine) {
+          const myTasks = data.filter(t => t.assignee.toLowerCase() === username.toLowerCase());
+          if (myTasks.length > 0) {
+            loadTasks(myTasks, false);
+            tasksTable.style.display = "table";
+          } else {
+            restricted.textContent = "No tasks assigned to you.";
+          }
+        } else {
+          tasksData = data;
+          loadTasks(tasksData, true);
+          if (tasksData.length > 0) tasksTable.style.display = "table";
+        }
+      } catch (error) {
+        showToast("Error fetching tasks");
+      }
+    }
+    function loadTasks(list, isAdmin) {
+      tasksBody.innerHTML = "";
+      list.forEach(task => {
+        const editing = editingTaskId === task.id;
+        const row = document.createElement("tr");
+        if (editing) {
+          row.innerHTML = `
+            <td>${task.id}</td>
+            <td><input type="text" id="editTaskName${task.id}" value="${task.name}" /></td>
+            <td><input type="text" id="editTaskAssignee${task.id}" value="${task.assignee}" /></td>
+            <td>
+              <select id="editTaskStatus${task.id}">
+                <option value="Pending" ${task.status === "Pending" ? "selected" : ""}>Pending</option>
+                <option value="In Progress" ${task.status === "In Progress" ? "selected" : ""}>In Progress</option>
+                <option value="Completed" ${task.status === "Completed" ? "selected" : ""}>Completed</option>
+              </select>
+            </td>
+            <td>
+              <button class="btn" onclick="saveTask(${task.id})">💾 Save</button>
+              <button class="btn btn-danger" onclick="cancelEdit()">✖ Cancel</button>
+            </td>`;
+        } else {
+          row.innerHTML = `
+            <td>${task.id}</td>
+            <td>${task.name}</td>
+            <td>${task.assignee}</td>
+            <td>${task.status}</td>
+            <td>
+              ${isAdmin ? `<button class="btn" onclick="editTask(${task.id})">✏️ Edit</button> <button class="btn btn-danger" onclick="deleteTask(${task.id})">🗑 Delete</button>` : "-"}
+            </td>`;
+        }
+        tasksBody.appendChild(row);
+      });
+    }
+    async function addTask() {
+      const name = document.getElementById("newTaskName").value.trim();
+      const assignee = document.getElementById("newTaskAssignee").value.trim();
+      const status = document.getElementById("newTaskStatus").value;
+      if (!name || !assignee) {
+        showToast("⚠️ Please fill all fields");
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/tasks`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, assignee, status })
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to add task");
+        }
+        document.getElementById("newTaskName").value = "";
+        document.getElementById("newTaskAssignee").value = "";
+        document.getElementById("newTaskStatus").value = "Pending";
+        fetchTasks();
+        showToast("✅ New task added!");
+      } catch (err) {
+        showToast("❌ " + err.message);
+      }
+    }
+    window.editTask = function(id) {
+      editingTaskId = id;
+      loadTasks(tasksData, true);
+    };
+    window.saveTask = async function(id) {
+      const name = document.getElementById(`editTaskName${id}`).value.trim();
+      const assignee = document.getElementById(`editTaskAssignee${id}`).value.trim();
+      const status = document.getElementById(`editTaskStatus${id}`).value;
+      if (!name || !assignee) {
+        showToast("⚠️ Please fill all fields");
+        return;
+      }
+      try {
+        const response = await fetch(`${API_BASE}/tasks/${id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, assignee, status })
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to update task");
+        }
+        editingTaskId = null;
+        fetchTasks();
+        showToast(`✏️ Task #${id} updated!`);
+      } catch (err) {
+        showToast("❌ " + err.message);
+      }
+    };
+    window.cancelEdit = function() {
+      editingTaskId = null;
+      loadTasks(tasksData, true);
+    };
+    window.deleteTask = async function(id) {
+      if (!confirm(`Are you sure you want to delete Task #${id}?`)) return;
+      try {
+        const response = await fetch(`${API_BASE}/tasks/${id}`, {
+          method: "DELETE"
+        });
+        if (!response.ok) {
+          const data = await response.json();
+          throw new Error(data.error || data.message || "Failed to delete task");
+        }
+        fetchTasks();
+        showToast(`🗑 Task #${id} deleted!`);
+      } catch (err) {
+        showToast("❌ " + err.message);
+      }
+    };
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2500);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+// Get reference to the navigation container element by its ID "mainNav"
+// getElementById is a DOM method that returns the element with the matching ID (unique in document)
+const mainNav = document.getElementById('mainNav'); 
+
+// Get reference to profile circle button which likely shows initial or image
+const profileCircle = document.getElementById("profileCircle");
+
+// Get reference to profile dropdown menu containing profile options
+const profileDropdown = document.getElementById("profileDropdown");
+
+// Get reference to element showing the username in the profile section
+const profileName = document.getElementById("profileName");
+
+// Get 'isLoggedIn' boolean value from localStorage (persistent browser storage for key-value pairs)
+// localStorage stores data even if page is reloaded or browser is closed
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+// Get 'username' saved in localStorage for the logged-in user
+const username = localStorage.getItem("username");
+
+// Get 'role' (user role like admin, client) stored in localStorage
+const role = localStorage.getItem("role");
+
+// Conditionally hide the add project form/section if user is not an admin
+if (role !== "admin") {
+  const addProject = document.getElementById("addProjectSection");
+  if (addProject) addProject.style.display = "none"; // sets the CSS display property to 'none' => hides element
+}
+
+// Object holding navigation items links and labels sorted by role, not fully shown here
+const navItemsByRole = { ... }; 
+
+// Function to render navigation links depending on the user's role
+function renderNav() {
+  let userRole = role || "admin"; // default to admin if role is falsy (null/undefined)
+  let navItems = navItemsByRole[userRole] || navItemsByRole.admin; // fallback to admin if no match
+  mainNav.innerHTML = ""; // clear existing navigation content
+  navItems.forEach(item => { // for each navigation item
+    const a = document.createElement('a'); // create an anchor (<a>) element
+    a.href = item.href; // set the link address
+    a.innerText = item.label; // set visible link text
+    if(location.pathname.endsWith(item.href)) a.className = "active"; // highlight current page's link
+    mainNav.appendChild(a); // add the anchor to main navigation container
+  });
+}
+// Wait for DOM content loaded before rendering nav
+document.addEventListener("DOMContentLoaded", renderNav);
+
+// Redirect to login page if not logged in or missing username/role
+if (isLoggedIn !== "true" || !username || !role) {
+  window.location.href = "signup_signin.html"; // change browser location (redirect)
+} else {
+  // Show profile circle visible
+  profileCircle.style.display = "flex";
+  // Set visible initial letter in profile circle capitalized
+  profileCircle.textContent = username.charAt(0).toUpperCase();
+  // Set profile name text
+  profileName.textContent = username;
+  // Toggle profile dropdown menu when profile circle clicked
+  profileCircle.onclick = () => profileDropdown.classList.toggle("show");
+  // Hide profile dropdown if clicked outside of it
+  document.addEventListener("click", e => {
+    if(!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+      profileDropdown.classList.remove("show");
+    }
+  });
+}
+
+// Logout function clears localStorage and redirects to signin page
+function logout() {
+  localStorage.clear();
+  window.location.href = "signup_signin.html";
+}
+
+// Block access when user role is not recognized among allowed roles
+if (!["admin", "client", "freelancer", "user"].includes(role)) {
+  document.body.innerHTML = `<section style="max-width:600px;margin:80px auto;text-align:center;font-size:1.3rem;color:#d63031;font-weight:700;">Access denied - You do not have access to Projects</section>`;
+  throw ""; // stop further script execution
+}
+
+// API base URL for making backend requests
+const API_BASE = "http://localhost:3000/api";
+// Reference to project list container element
+const miniProjectList = document.getElementById("miniProjectList");
+// Reference to add project form element
+const projectForm = document.getElementById("projectForm");
+// Reference to edit project modal container
+const editModal = document.getElementById("editModalBackdrop");
+// Reference to edit project form inside modal
+const editProjectForm = document.getElementById("editProjectForm");
+// Reference to cancel button in the edit modal
+const cancelEditBtn = document.getElementById("cancelEditBtn");
+
+// Array to store fetched projects data
+let projectsData = [];
+// Store ID of the project currently being edited
+let editingProjectId = null;
+
+// Function to load the client dropdown options dynamically
+function loadClientDropdown(dropdownId, selectedValue) {
+  fetch(`${API_BASE}/users`) // fetch users list from API
+    .then(res => res.json()) // parse JSON response
+    .then(users => {
+      const select = document.getElementById(dropdownId);
+      select.innerHTML = '<option value="">Select User</option>'; // reset dropdown options
+      users
+        .filter(user => user.role !== "admin") // exclude admin users
+        .forEach(user => {
+          const opt = document.createElement('option'); // create new option element
+          opt.value = user.username; // set option value
+          opt.textContent = `${user.username} (${user.role})`; // visible text with username and role
+          if (selectedValue && user.username === selectedValue) opt.selected = true; // pre-select option if matched
+          select.appendChild(opt);
+        });
+    });
+}
+// Load client dropdown for adding project only if user is admin
+if (role === "admin") loadClientDropdown("projectClient");
+// For editing project, function to populate client dropdown on edit modal
+function loadEditClientDropdown(selectedValue) { loadClientDropdown("editProjectClient", selectedValue); }
+
+// Fetch projects from backend API and load them into UI
+async function fetchProjects() {
+  try {
+    let url = `${API_BASE}/projects`; // base API endpoint
+    if (role !== "admin") {
+      url += `?client=${encodeURIComponent(username)}`; // non-admins get only their projects filtered by username
+    }
+    const response = await fetch(url); // make async HTTP GET request
+    projectsData = await response.json(); // wait for JSON response body
+    loadProjects(); // render projects in UI
+  } catch {
+    alert("Failed to load projects."); // alert user on failure
+  }
+}
+// On DOM content loaded, trigger projects fetch
+document.addEventListener("DOMContentLoaded", fetchProjects);
+
+// Render list of projects in the UI
+function loadProjects() {
+  miniProjectList.innerHTML = ""; // clear existing project cards
+  const minShow = 2; // show first N projects initially
+  const initialProjects = projectsData.slice(0, minShow); // slice first projects to show
+  const remainingProjects = projectsData.slice(minShow); // remaining projects hidden initially
+  initialProjects.forEach(prj => miniProjectList.appendChild(createProjectCard(prj))); // render visible projects
+  // If there are more projects, show a "See more" link
+  if (remainingProjects.length > 0) {
+    const hiddenCards = remainingProjects.map(createProjectCard); // cards for hidden projects
+    const seeMoreLink = document.createElement("a"); // create anchor for "See more"
+    seeMoreLink.href = "#";
+    seeMoreLink.textContent = `See ${remainingProjects.length} More Project${remainingProjects.length > 1 ? 's' : ''}`;
+    seeMoreLink.style.display = "block";
+    seeMoreLink.style.marginTop = "12px";
+    seeMoreLink.style.color = "var(--accent)";
+    seeMoreLink.style.cursor = "pointer";
+    seeMoreLink.style.userSelect = "none";
+    let revealed = false;
+    // When user clicks "See more", reveal hidden projects and remove link
+    seeMoreLink.onclick = (e) => {
+      e.preventDefault();
+      if (!revealed) {
+        hiddenCards.forEach(card => miniProjectList.appendChild(card));
+        seeMoreLink.remove();
+        revealed = true;
+      }
+    };
+    miniProjectList.appendChild(seeMoreLink); // attach link to project list
+  }
+}
+
+// Create an individual project card element representing a project
+function createProjectCard(prj) {
+  const card = document.createElement("div"); // create container div
+  card.className = "mini-card"; // set card styling class
+  const infoDiv = document.createElement("div"); // container for project info
+  infoDiv.className = "project-info";
+  const title = document.createElement("div"); // project title element
+  title.className = "mini-title";
+  title.textContent = prj.name || "Unnamed Project"; // show project name or fallback
+  const statusSpan = document.createElement("span"); // span showing project status
+  // set class for styling based on status, formatted to lowercase and hyphenated
+  statusSpan.className = "status " + (prj.status ? prj.status.toLowerCase().replace(" ", "-") : "unknown");
+  statusSpan.textContent = prj.status || "Unknown"; // display status text or fallback
+  title.appendChild(statusSpan); // place status inside title
+  infoDiv.appendChild(title); // add title to info div
+  const clientPara = document.createElement("div"); // client assignment info
+  clientPara.className = "mini-info";
+  clientPara.textContent = "Assigned: " + (prj.client || "N/A");
+  infoDiv.appendChild(clientPara);
+  const deadlinePara = document.createElement("div"); // deadline date info
+  deadlinePara.className = "mini-info";
+  // format date string or show N/A if missing
+  deadlinePara.textContent = "Deadline: " + (prj.deadline ? new Date(prj.deadline).toLocaleDateString() : "N/A");
+  infoDiv.appendChild(deadlinePara);
+  // If user role is admin, show edit and delete buttons
+  if (role === "admin") {
+    const btnContainer = document.createElement("div");
+    btnContainer.className = "action-buttons";
+    const editBtn = document.createElement("button");
+    editBtn.type = "button";
+    editBtn.className = "btn-action";
+    editBtn.innerHTML = "✏️ Edit";
+    // Clicking edit button opens the modal with project info
+    editBtn.onclick = () => openEditModal(prj);
+    const deleteBtn = document.createElement("button");
+    deleteBtn.type = "button";
+    deleteBtn.className = "btn-danger";
+    deleteBtn.innerHTML = "🗑 Delete";
+    // Clicking delete triggers project deletion
+    deleteBtn.onclick = () => deleteProject(prj.id);
+    btnContainer.appendChild(editBtn);
+    btnContainer.appendChild(deleteBtn);
+    infoDiv.appendChild(btnContainer);
+  }
+  card.appendChild(infoDiv); // add project info to card container
+  return card; // return the populated project card element
+}
+
+// Show or hide the add project form based on if user is admin
+if (projectForm) projectForm.style.display = (role === "admin") ? "flex" : "none";
+
+// If admin, listen for the submit event on the add project form
+if (role === "admin" && projectForm) {
+  projectForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent page reload on submit
+    // Gather form data into an object for API
+    const projectData = {
+      name: document.getElementById("projectName").value.trim(),
+      deadline: document.getElementById("projectDeadline").value,
+      client: document.getElementById("projectClient").value.trim(),
+      status: document.getElementById("projectStatus").value
+    };
+    // Basic validation - ensure all required fields are filled
+    if (!projectData.name || !projectData.deadline || !projectData.client || !projectData.status) {
+      alert("Please fill all required fields.");
+      return;
+    }
+    try {
+      // POST the new project data to backend API
+      const response = await fetch(`${API_BASE}/projects`, {
+        method: "POST", // HTTP method POST = create
+        headers: { "Content-Type": "application/json" }, // set content type header to JSON
+        body: JSON.stringify(projectData) // serialize data to JSON string
+      });
+      // If response is not OK, read and throw error message from response body
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || data.message || "Failed to add project");
+      }
+      projectForm.reset(); // clear form inputs
+      fetchProjects(); // reload projects list after addition
+      alert("✅ Project added successfully!"); // success message
+    } catch (err) {
+      alert("❌ " + err.message); // error alert on failure
+    }
+  });
+}
+
+// Open modal dialog to edit a project, populate with project data
+function openEditModal(prj) {
+  editingProjectId = prj.id; // remember project ID being edited
+  document.getElementById("editProjectName").value = prj.name || ""; // fill project name input
+  // fill deadline input with date formatted as yyyy-mm-dd, or empty if no deadline
+  document.getElementById("editProjectDeadline").value = prj.deadline ? new Date(prj.deadline).toISOString().split("T")[0] : "";
+  loadEditClientDropdown(prj.client); // populate client select with current selection
+  document.getElementById("editProjectStatus").value = prj.status || "Pending"; // set status select default
+  editModal.classList.add("show"); // show modal by adding CSS class
+  editModal.setAttribute("aria-hidden", "false"); // accessibility: modal visible
+  document.getElementById("editProjectName").focus(); // focus input for UX
+}
+
+// Cancel button closes modal dialog and clears editing state
+cancelEditBtn.addEventListener("click", () => { closeModal(); });
+
+// Handle submit event of edit project form
+editProjectForm.addEventListener("submit", async (e) => {
+  e.preventDefault(); // prevent page reload on submit
+  const updatedProject = {
+    name: document.getElementById("editProjectName").value.trim(),
+    deadline: document.getElementById("editProjectDeadline").value,
+    client: document.getElementById("editProjectClient").value.trim(),
+    status: document.getElementById("editProjectStatus").value
+  };
+  // Validation to check all required fields filled
+  if (!updatedProject.name || !updatedProject.deadline || !updatedProject.client || !updatedProject.status) {
+    alert("Please fill all required fields.");
+    return;
+  }
+  try {
+    // Send PUT request to update project
+    const response = await fetch(`${API_BASE}/projects/${editingProjectId}`, {
+      method: "PUT", // HTTP PUT method = update
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedProject)
+    });
+    // On failure, throw an error with the message from backend response
+    if (!response.ok) {
+      const data = await response.json();
+      throw new Error(data.error || data.message || "Failed to update project");
+    }
+    closeModal(); // close the modal on success
+    fetchProjects(); // reload list with updated data
+    alert("✅ Project updated successfully!");
+  } catch (err) {
+    alert("❌ " + err.message);
+  }
+});
+
+// Helper function to close modal and reset edit ID
+function closeModal() {
+  editingProjectId = null;
+  editModal.classList.remove("show"); // hide modal CSS class removed
+  editModal.setAttribute("aria-hidden", "true"); // accessibility flag modal hidden
+}
+
+// Delete project function with confirmation prompt
+function deleteProject(id) {
+  // Confirm user wants to delete
+  if (!confirm(`Are you sure you want to delete project ${id}?`)) return;
+  // Make DELETE request to backend project endpoint
+  fetch(`${API_BASE}/projects/${id}`, { method: "DELETE" })
+    .then(res => {
+      if (!res.ok) throw new Error("Failed to delete project");
+      return res.json();
+    })
+    .then(() => {
+      alert("Project deleted"); // notify success
+      fetchProjects(); // reload projects list
+    })
+    .catch(err => alert(err.message)); // show error messages to user
+}

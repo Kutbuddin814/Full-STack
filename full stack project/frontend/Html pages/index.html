@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flezidesk - Freelancer Management System</title>
+  <style>
+   :root {
+      --nav-bg: #2c3e50;
+      --accent: #6c5ce7;
+      --danger: #e74c3c;
+      --danger-dark: #c0392b;
+      --card: #fff;
+      --muted: #f8f9fc;
+      --text: #333;
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--nav-bg);
+      color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+      font-weight: 600;
+    }
+  .navbar nav#mainNav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+      margin-left: auto;
+    }
+    .navbar h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 22px;
+      letter-spacing: 1.1px;
+      user-select: none;
+    }
+
+    .navbar h2 img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.25s var(--transition-ease), color 0.25s var(--transition-ease);
+    }
+
+    .navbar nav a:hover,
+    .navbar nav a:focus-visible {
+      background-color: rgba(255, 255, 255, 0.15);
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+
+    .navbar nav a.active {
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+    }
+
+    /* Profile UI */
+    .profile-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      user-select: none;
+    }
+
+    #profileCircle {
+      width: 42px;
+      height: 42px;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 8px rgb(108 92 231 / 0.6);
+      transition: background-color 0.3s ease;
+    }
+
+    #profileCircle:hover,
+    #profileCircle:focus-visible {
+      background-color: #5548c8;
+      outline-offset: 2px;
+      outline: 2px solid #b6a8ff;
+    }
+
+    #profileDropdown {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.25s var(--transition-ease), transform 0.25s var(--transition-ease);
+      z-index: 200;
+    }
+
+    #profileDropdown.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    #profileDropdown p {
+      margin: 0 0 12px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--nav-bg);
+      word-break: break-word;
+    }
+
+    #profileDropdown .logout-btn {
+      width: 100%;
+      padding: 10px 0;
+      background: var(--danger);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgb(231 76 60 / 0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    #profileDropdown .logout-btn:hover,
+    #profileDropdown .logout-btn:focus-visible {
+      background: var(--danger-dark);
+      outline-offset: 2px;
+      outline: 2px solid #f08080;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--accent), #a29bfe);
+      color: #fff;
+      text-align: center;
+      padding: 110px 24px 90px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      box-shadow: inset 0 0 60px rgb(255 255 255 / 0.15);
+      border-radius: 0 0 40px 40px;
+      user-select: none;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+      line-height: 1.1;
+      text-shadow: 0 0 18px rgba(255, 255, 255, 0.7);
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+      margin: 0 auto 28px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 14px 36px;
+      background: #fff;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgb(108 92 231 / 0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+      user-select: none;
+    }
+
+    .hero a:hover,
+    .hero a:focus-visible {
+      background: #f8f7ff;
+      box-shadow: 0 8px 25px rgb(108 92 231 / 0.7);
+      transform: translateY(-2px);
+      outline-offset: 3px;
+      outline: 3px solid #8077f4;
+    }
+
+    /* Features */
+    .features {
+      padding: 70px 24px 90px;
+      max-width: 1140px;
+      margin: 0 auto;
+      user-select: none;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 48px;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--nav-bg);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-shadow: 0 0 6px rgb(108 92 231 / 0.15);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 960px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      padding: 36px 26px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.35s var(--transition-ease), box-shadow 0.25s ease;
+      cursor: default;
+      user-select: text;
+    }
+
+    .card:hover,
+    .card:focus-within {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 25px rgb(108 92 231 / 0.25);
+    }
+
+    .card i {
+      font-size: 36px;
+      margin-bottom: 16px;
+      color: var(--accent);
+      display: block;
+      text-shadow: 0 0 10px rgb(108 92 231 / 0.6);
+      user-select: none;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: var(--nav-bg);
+      font-weight: 700;
+      user-select: text;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.5;
+      user-select: text;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 70px 24px 90px;
+      user-select: none;
+      border-radius: 16px 16px 0 0;
+      box-shadow: inset 0 0 45px rgb(255 255 255 / 0.12);
+    }
+
+    .cta h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+
+    .cta p {
+      margin-bottom: 28px;
+      font-size: 18px;
+      color: #eef0ff;
+      font-weight: 400;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+      user-select: text;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 36px;
+      background: #fff;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 8px 30px rgb(108 92 231 / 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+      user-select: none;
+    }
+
+    .cta a:hover,
+    .cta a:focus-visible {
+      background: #f8f7ff;
+      box-shadow: 0 10px 35px rgb(108 92 231 / 0.9);
+      transform: translateY(-3px);
+      outline-offset: 3px;
+      outline: 3px solid #8077f4;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 26px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -4px 8px rgb(0 0 0 / 0.12);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      transition: text-decoration 0.25s ease;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+      outline-offset: 2px;
+      outline: 2px solid rgba(108, 92, 231, 0.6);
+    }
+  
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar" role="banner" aria-label="Primary navigation">
+    <h2>
+      <a href="index.html" aria-label="Flezidesk Home">
+        <img src="images/flezidesk.png" alt="Flezidesk Logo" />
+      </a>
+      Flezidesk
+    </h2>
+    <nav id="mainNav"></nav>
+    <div class="profile-wrap">
+      <button id="profileCircle" aria-haspopup="true" aria-expanded="false" aria-label="Open user profile menu"></button>
+      <div id="profileDropdown" role="menu" aria-label="User Profile Menu">
+        <p id="profileName" tabindex="0" aria-live="polite"></p>
+        <button class="logout-btn" onclick="logout()" tabindex="0">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" role="banner" aria-labelledby="hero-title">
+    <h1 id="hero-title">Welcome to Flezidesk</h1>
+    <p>Organize clients, projects, tasks, and invoices effortlessly. Streamline your freelance workflow and focus on what matters most.</p>
+    <a href="#" id="getStartedBtn" role="button">Get Started Free →</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features" aria-labelledby="features-title">
+    <h2 id="features-title">Key Features</h2>
+    <div class="cards">
+      <article class="card" tabindex="0" role="region" aria-label="Manage Clients Feature">
+        <i>👥</i>
+        <h3>Manage Clients</h3>
+        <p>Track client details and relationships.</p>
+      </article>
+      <article class="card" tabindex="0" role="region" aria-label="Handle Projects Feature">
+        <i>📂</i>
+        <h3>Handle Projects</h3>
+        <p>Organize projects with milestones.</p>
+      </article>
+      <article class="card" tabindex="0" role="region" aria-label="Track Tasks Feature">
+        <i>✅</i>
+        <h3>Track Tasks</h3>
+        <p>Update progress and meet deadlines.</p>
+      </article>
+      <article class="card" tabindex="0" role="region" aria-label="Generate Invoices Feature">
+        <i>💰</i>
+        <h3>Generate Invoices</h3>
+        <p>Create invoices and track payments.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="ctaSection" aria-labelledby="cta-title" role="region">
+    <h2 id="cta-title">Start Managing Smarter Today</h2>
+    <p>Join thousands of freelancers who’ve transformed their workflow with Flezidesk.</p>
+    <a href="#" id="signUpBtn" role="button">Sign Up Free →</a>
+  </section>
+  <footer role="contentinfo">
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Help</a></p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // DYNAMIC ROLE-BASED NAVIGATION
+    const mainNav = document.getElementById('mainNav');
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const role = localStorage.getItem("role");
+    const username = localStorage.getItem("username");
+
+    const navItemsByRole = {
+      admin: [
+        { href: "index.html", label: "Home" },
+        { href: "dashboard.html", label: "Dashboard" },
+        { href: "clients.html", label: "Clients" },
+        { href: "projects.html", label: "Projects" },
+        { href: "tasks.html", label: "Tasks" },
+        { href: "invoices.html", label: "Invoices" }
+      ],
+      freelancer: [
+        { href: "dashboard.html", label: "Dashboard" },
+        { href: "projects.html", label: "Projects" },
+        { href: "tasks.html", label: "Tasks" }
+      ],
+      client: [
+        { href: "dashboard.html", label: "Dashboard" },
+        { href: "projects.html", label: "Projects" },
+        { href: "tasks.html", label: "Tasks" },
+        { href: "invoices.html", label: "Invoices" }
+      ],
+      user: [
+        { href: "dashboard.html", label: "Dashboard" },
+        { href: "projects.html", label: "Projects" },
+        { href: "tasks.html", label: "Tasks" }
+      ]
+    };
+    function renderNav() {
+      let navItems = [];
+      if (!isLoggedIn || !role) {
+        // Unauthenticated
+        navItems = [
+          { href: "index.html", label: "Home" },
+          { href: "signup_signin.html", label: "Login" }
+        ];
+      } else {
+        navItems = navItemsByRole[role] || navItemsByRole.admin;
+      }
+      mainNav.innerHTML = "";
+      navItems.forEach(item => {
+        const a = document.createElement('a');
+        a.href = item.href;
+        a.innerText = item.label;
+        if (location.pathname.endsWith(item.href)) a.className = "active";
+        mainNav.appendChild(a);
+      });
+    }
+    renderNav();
+
+    // PROFILE UI & CTA LOGIC
+    const profileCircle = document.getElementById("profileCircle");
+    const profileDropdown = document.getElementById("profileDropdown");
+    const profileName = document.getElementById("profileName");
+    const getStartedBtn = document.getElementById("getStartedBtn");
+    const signUpBtn = document.getElementById("signUpBtn");
+    const ctaSection = document.getElementById("ctaSection");
+
+    if (isLoggedIn === "true" && username) {
+      if (getStartedBtn) getStartedBtn.style.display = "none";
+      if (signUpBtn) signUpBtn.style.display = "none";
+      if (ctaSection) ctaSection.style.display = "none";
+      profileCircle.textContent = username.charAt(0).toUpperCase();
+      profileName.textContent = username;
+      profileCircle.style.display = "flex";
+      profileCircle.setAttribute("aria-expanded", "false");
+      profileCircle.onclick = () => {
+        const shown = profileDropdown.classList.toggle("show");
+        profileCircle.setAttribute("aria-expanded", shown);
+      };
+      document.addEventListener("click", (e) => {
+        if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+          profileDropdown.classList.remove("show");
+          profileCircle.setAttribute("aria-expanded", "false");
+        }
+      });
+    } else {
+      profileCircle.style.display = "none";
+      if (getStartedBtn) {
+        getStartedBtn.onclick = (e) => {
+          e.preventDefault();
+          window.location.href = "signup_signin.html";
+        };
+      }
+      if (signUpBtn) {
+        signUpBtn.onclick = (e) => {
+          e.preventDefault();
+          window.location.href = "signup_signin.html";
+        };
+      }
+    }
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "signup_signin.html";
+    }
+  </script>
+</body>
+</html>

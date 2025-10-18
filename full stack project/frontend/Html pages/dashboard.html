@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Flezidesk</title>
+  <style>
+    :root {
+  --nav-bg: #2c3e50;
+  --accent: #6c5ce7;
+  --danger: #e74c3c;
+  --card: #fff;
+  --muted: #f8f9fc;
+  --text: #333;
+  --shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+  color: var(--text);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg);
+  color: white;
+  padding: 14px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.09);
+  font-weight: 600;
+}
+.navbar h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 22px;
+}
+.navbar h2 img {
+  height: 40px;
+  object-fit: contain;
+}
+.navbar nav#mainNav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
+}
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color .3s var(--transition-ease),color .3s var(--transition-ease);
+}
+.navbar nav a.active {
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+.profile-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+#profileCircle {
+  width: 42px;
+  height: 42px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+#profileDropdown {
+  position: absolute;
+  top: 54px;
+  right: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  opacity: 0;
+  pointer-events: none;
+  transform:translateY(-8px);
+  transition: opacity .25s var(--transition-ease),transform .25s var(--transition-ease);
+  z-index:200;
+}
+#profileDropdown.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform:translateY(0);
+}
+#profileDropdown p {
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--nav-bg);
+}
+#profileDropdown .logout-btn {
+  width: 100%;
+  padding: 10px 0;
+  background: var(--danger);
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.dashboard-container {
+  max-width: 950px;
+  margin: 50px auto 0 auto;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.dash-card {
+  background: var(--card);
+  border-radius: 20px;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: var(--shadow);
+  padding: 34px 30px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dash-card h3 {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.23rem;
+  margin-bottom: 10px;
+}
+.dash-card .stat {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--nav-bg);
+}
+.dash-card .icon {
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.chart-container {
+  min-width: 380px;
+  max-width: 460px;
+  background: var(--muted);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chart-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 18px;
+  text-align: center;
+}
+canvas {
+  width: 100% !important;
+  height: 240px !important;
+  max-height: 240px !important;
+}
+footer {
+  background: var(--nav-bg);
+  color: white;
+  text-align: center;
+  padding: 28px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  user-select: none;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.13);
+  margin-top: 60px;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width:1000px) {
+  .dashboard-container { max-width: 100%; }
+  .card-row, .chart-row { flex-direction: column; gap:22px; }
+  .dash-card, .chart-container { width: 100%; max-width: none; align-items: center;}
+  .dash-card { min-width: 0;}
+  .chart-container { min-width:0;}
+}
+@media (max-width:600px) {
+  .dashboard-container { margin: 12px auto 0 auto; }
+  .dash-card { padding: 20px 10px; font-size:1rem; }
+  .chart-container { padding: 14px; }
+  canvas { height:155px !important; max-height:155px !important;}
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h2>
+      <a href="index.html"><img src="images/flezidesk.png" alt="Flezidesk Logo" /></a> Flezidesk
+    </h2>
+    <nav id="mainNav"></nav>
+    <div class="profile-wrap">
+      <button id="profileCircle"></button>
+      <div id="profileDropdown">
+        <p id="profileName"></p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-container">
+    <div class="card-row" id="dashboardCards"></div>
+    <div class="chart-row" id="dashboardCharts"></div>
+  </div>
+  <footer>
+    <p>📧 <a href="mailto:support@flezidesk.com">support@flezidesk.com</a> | ☎ +91 98765 43210</p>
+    <p>&copy; 2025 Flezidesk. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+   const role = localStorage.getItem("role");
+const username = localStorage.getItem("username");
+const mainNav = document.getElementById('mainNav');
+const navItemsByRole = {
+  admin: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "clients.html", label: "Clients" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  freelancer: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ],
+  client: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" },
+    { href: "invoices.html", label: "Invoices" }
+  ],
+  user: [
+    { href: "dashboard.html", label: "Dashboard" },
+    { href: "projects.html", label: "Projects" },
+    { href: "tasks.html", label: "Tasks" }
+  ]
+};
+function renderNav() {
+  let navItems = navItemsByRole[role] || navItemsByRole.admin;
+  mainNav.innerHTML = "";
+  navItems.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.innerText = item.label;
+    if (location.pathname.endsWith(item.href)) a.className = "active";
+    mainNav.appendChild(a);
+  });
+}
+renderNav();
+
+// Profile dropdown
+const profileCircle = document.getElementById("profileCircle");
+const profileDropdown = document.getElementById("profileDropdown");
+const profileName = document.getElementById("profileName");
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+if (isLoggedIn === "true" && username) {
+  profileCircle.style.display = "flex";
+  profileCircle.textContent = username.charAt(0).toUpperCase();
+  profileName.textContent = username;
+  profileCircle.onclick = () => profileDropdown.classList.toggle("show");
+  document.addEventListener("click", e => {
+    if (!profileDropdown.contains(e.target) && e.target !== profileCircle) {
+      profileDropdown.classList.remove("show");
+    }
+  });
+} else {
+  window.location.href = "signup_signin.html";
+}
+function logout() {
+  localStorage.clear();
+  window.location.href = "signup_signin.html";
+}
+
+const cardsContainer = document.getElementById('dashboardCards');
+const chartsContainer = document.getElementById('dashboardCharts');
+
+const API_BASE = "http://localhost:3000/api";
+
+// Dynamic dashboard counts and chart data
+async function fetchDashboardData() {
+  let q = "";
+  if (role !== "admin") q = "?username=" + encodeURIComponent(username);
+
+  // Fetch core entities
+  const [clientsR, projectsR, tasksR, invoicesR] = await Promise.all([
+    role === "admin" ? fetch(`${API_BASE}/clients`) : Promise.resolve({ json: () => [] }),
+    fetch(`${API_BASE}/projects${role !== "admin" ? `?client=${encodeURIComponent(username)}` : ""}`),
+    fetch(`${API_BASE}/tasks${q}`),
+    fetch(`${API_BASE}/invoices${q}`)
+  ]);
+  const clients = role === "admin" ? await clientsR.json() : [];
+  const projects = await projectsR.json();
+  const tasks = await tasksR.json();
+  const invoices = await invoicesR.json();
+
+  // Collect status buckets for charts
+  const projectStatus = { Pending: 0, "In Progress": 0, Completed: 0 };
+  projects.forEach(p => projectStatus[p.status] = (projectStatus[p.status] || 0) + 1);
+
+  const taskStatus = { Pending: 0, "In Progress": 0, Completed: 0 };
+  tasks.forEach(t => taskStatus[t.status] = (taskStatus[t.status] || 0) + 1);
+
+  // Render
+  renderDashboard({
+    clientsCount: clients.length,
+    projectsCount: projects.length,
+    tasksCount: tasks.length,
+    invoicesCount: invoices.length,
+    projectStatus,
+    taskStatus
+  });
+}
+
+function renderDashboard(data) {
+  cardsContainer.innerHTML = "";
+  chartsContainer.innerHTML = "";
+
+  const cardsConfig = {
+    admin: [
+      { label: 'Total Clients', value: data.clientsCount, color: '#6c5ce7', icon: '👥' },
+      { label: 'Total Projects', value: data.projectsCount, color: '#0984e3', icon: '📂' },
+      { label: 'Total Tasks', value: data.tasksCount, color: '#00b894', icon: '✅' },
+      { label: 'Total Invoices', value: data.invoicesCount, color: '#fdcb6e', icon: '💰' }
+    ],
+    freelancer: [
+      { label: 'My Projects', value: data.projectsCount, color: '#0984e3', icon: '📂' },
+      { label: 'My Tasks', value: data.tasksCount, color: '#00b894', icon: '✅' }
+    ],
+    client: [
+      { label: 'My Projects', value: data.projectsCount, color: '#0984e3', icon: '📂' },
+      { label: 'My Tasks', value: data.tasksCount, color: '#00b894', icon: '✅' },
+      { label: 'My Invoices', value: data.invoicesCount, color: '#fdcb6e', icon: '💰' }
+    ],
+    user: [
+      { label: 'Assigned Tasks', value: data.tasksCount, color: '#00b894', icon: '✅' },
+      { label: 'Active Projects', value: data.projectsCount, color: '#0984e3', icon: '📂' }
+    ]
+  };
+
+  const chartConfig = {
+    admin: [{
+      id: 'projectStatusChart', 
+      title: 'Project Status',
+      type: 'doughnut', 
+      data: {
+        labels: ["Pending", "In Progress", "Completed"],
+        datasets: [{
+          data: [data.projectStatus.Pending, data.projectStatus["In Progress"], data.projectStatus.Completed],
+          backgroundColor: ["#fdcb6e", "#6c5ce7", "#00b894"]
+        }]
+      }
+    }],
+    freelancer: [{
+      id: 'myTaskStatusChart',
+      title: 'My Task Status',
+      type: 'pie',
+      data: {
+        labels: ["Pending", "In Progress", "Completed"],
+        datasets: [{
+          data: [data.taskStatus.Pending, data.taskStatus["In Progress"], data.taskStatus.Completed],
+          backgroundColor: ["#fdcb6e", "#6c5ce7", "#00b894"]
+        }]
+      }
+    }],
+    client: [{
+      id: 'myProjectStatusChart',
+      title: 'Project Status',
+      type: 'pie',
+      data: {
+        labels: ["Pending", "In Progress", "Completed"],
+        datasets: [{
+          data: [data.projectStatus.Pending, data.projectStatus["In Progress"], data.projectStatus.Completed],
+          backgroundColor: ["#fdcb6e", "#6c5ce7", "#00b894"]
+        }]
+      }
+    }],
+    user: [{
+      id: 'userTaskChart',
+      title: 'Task Status Overview',
+      type: 'pie',
+      data: {
+        labels: ["Pending", "In Progress", "Completed"],
+        datasets: [{
+          data: [data.taskStatus.Pending, data.taskStatus["In Progress"], data.taskStatus.Completed],
+          backgroundColor: ["#fdcb6e", "#6c5ce7", "#00b894"]
+        }]
+      }
+    }]
+  };
+
+  const cards = cardsConfig[role] || cardsConfig.admin;
+  const charts = chartConfig[role] || chartConfig.admin;
+
+  cards.forEach(card => {
+    cardsContainer.innerHTML += `
+      <div class="dash-card" style="border-top:3px solid ${card.color};">
+        <div class="icon">${card.icon}</div>
+        <h3>${card.label}</h3>
+        <div class="stat">${card.value}</div>
+      </div>
+    `;
+  });
+
+  charts.forEach(chart => {
+    chartsContainer.innerHTML += `
+      <div class="chart-container">
+        <div class="chart-title">${chart.title}</div>
+        <canvas id="${chart.id}"></canvas>
+      </div>
+    `;
+  });
+  setTimeout(() => {
+    charts.forEach(chart => {
+      new Chart(document.getElementById(chart.id), {
+        type: chart.type,
+        data: chart.data,
+        options: { responsive: true, plugins: { legend: { display: true, position: 'bottom' } } }
+      });
+    });
+  }, 50);
+}
+
+fetchDashboardData();
+
+  </script>
+</body>
+
+</html>
